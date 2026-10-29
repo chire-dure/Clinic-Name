@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & META -->
+    <title>Dental Braces & Orthodontics | [CLINIC NAME] [Your Address]</title>
+    <meta name="description" content="Align your smile with metal, ceramic & self-ligating braces at [Your Address]. Flexible monthly terms with ₱5,000 downpayment. Book your consult!">
+    <link rel="canonical" href="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/dental-braces/]">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dental Braces & Orthodontics | [CLINIC NAME] [Your Address]">
+    <meta property="og:description" content="Affordable orthodontic braces at [Your Address]. Quality metal & ceramic braces with ₱5,000 initial downpayment and easy monthly installments.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/dental-braces/]">
+    <meta property="og:image" content="[PLACEHOLDER: https://www.yourdentalclinicdomain.com/images/og-braces.jpg]">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/]"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/]"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dental Braces",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/dental-braces/]"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Central Clinic Configuration -->
+    <script src="/clinic-config.js"></script>
+
+    <!-- External Assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#0F766E', // Seafoam Teal
+                            light: '#14B8A6',
+                            dark: '#0B524C',
+                        },
+                        seafoam: {
+                            50: '#F0FDFB',
+                            100: '#E1FBF6',
+                            200: '#C4F6EE',
+                            500: '#2DD4BF',
+                            700: '#0F766E',
+                            900: '#134E4A'
+                        },
+                        mint: {
+                            50: '#F2FCF8',
+                            100: '#E2F7EF',
+                            500: '#10B981'
+                        },
+                        secondary: '#F4FAF8',
+                        accent: '#FF6B35',
+                        dark: '#0B2523'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .custom-shadow { box-shadow: 0 10px 30px -5px rgba(15, 118, 110, 0.12); }
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+            .reveal.active { opacity: 1; transform: translateY(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+    </style>
+</head>
+<body class="font-sans text-[#0B2523] bg-[#F4FAF8] overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" aria-label="Main navigation" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-white/95 backdrop-blur-md shadow-sm border-b border-teal-100/60">
+        <a href="/" class="flex items-center gap-2 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-1">
+            <div class="bg-gradient-to-br from-teal-500 to-[#0F766E] text-white p-2.5 rounded-xl group-hover:rotate-12 transition-transform shadow-md shadow-teal-900/10">
+                <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-brand">[CLINIC NAME] <span class="text-accent">[Your Address]</span></span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+            <a href="/about/" class="hover:text-brand transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand py-1 px-2 rounded">About Us</a>
+            <a href="/services/" class="text-brand border-b-2 border-brand pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded font-bold">Services</a>
+            <a href="/#booking" class="bg-[#0F766E] text-white px-6 py-3 rounded-full hover:bg-[#0B524C] transition shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F766E] min-h-[44px] flex items-center justify-center font-bold">Book Appointment</a>
+        </div>
+
+        <button id="mobile-menu-btn" aria-label="Open mobile menu" class="md:hidden text-brand text-2xl p-2 min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 text-2xl font-bold translate-x-full transition-transform duration-300">
+        <button id="close-menu" aria-label="Close mobile menu" class="absolute top-6 right-6 text-3xl text-brand p-2 min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <a href="/" class="mobile-link hover:text-brand transition">Home</a>
+        <a href="/about/" class="mobile-link hover:text-brand transition">About Us</a>
+        <a href="/services/" class="mobile-link text-brand font-bold">Services</a>
+        <a href="/#booking" class="bg-[#0F766E] text-white px-8 py-4 rounded-full min-h-[44px] flex items-center justify-center font-bold">Book Now</a>
+    </div>
+
+    <main class="pt-24 pb-20">
+        <!-- 1. BREADCRUMBS -->
+        <div class="max-w-7xl mx-auto px-6 md:px-12 pt-6">
+            <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-gray-500 mb-6 font-medium">
+                <a href="/" class="hover:text-brand transition">Home</a>
+                <span class="text-gray-300">/</span>
+                <a href="/services/" class="hover:text-brand transition">Services</a>
+                <span class="text-gray-300">/</span>
+                <span class="text-brand font-bold" aria-current="page">Dental Braces</span>
+            </nav>
+        </div>
+
+        <!-- 2. SERVICE HERO -->
+        <section class="relative bg-gradient-to-b from-[#E7F7F4] via-[#F2FAF8] to-white py-16 px-6 md:px-12 border-b border-teal-100/70 overflow-hidden">
+            <!-- Ambient Glow -->
+            <div class="absolute -top-24 right-0 w-[500px] h-[500px] bg-teal-200/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+            <div class="absolute top-1/2 -left-20 w-[350px] h-[350px] bg-emerald-200/25 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 relative z-10">
+                <div class="lg:w-1/2 reveal">
+                    <span class="bg-teal-100/90 text-[#0F766E] border border-teal-200/70 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block shadow-sm">
+                        Orthodontics at [Your Address]
+                    </span>
+                    <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
+                        Dental Braces & <span class="text-[#0F766E]">Orthodontics</span> at [Your Address]
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Correct crowded, crooked, or spaced teeth with personalized orthodontic care. Choose from traditional metal, aesthetic ceramic, or self-ligating brackets backed by a gentle <strong>₱5,000 downpayment</strong> installment plan.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-6">
+                        <a href="/#booking?service=dental-braces" class="bg-[#0F766E] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0B524C] transition shadow-lg shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Book Free Assessment
+                        </a>
+                        <a href="#color-of-braces" class="bg-white border-2 border-[#0F766E] text-[#0F766E] px-6 py-4 rounded-xl font-bold text-base hover:bg-teal-50 transition min-h-[44px] flex items-center justify-center gap-2">
+                            <i class="fas fa-palette text-brand"></i> Preview Braces Colors
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-6 text-xs text-gray-500 font-semibold">
+                        <span class="flex items-center gap-1.5 text-brand"><i class="fas fa-check-circle"></i> ₱5,000 Low Downpayment</span>
+                        <span class="flex items-center gap-1.5 text-brand"><i class="fas fa-check-circle"></i> Flexible Monthly Visits</span>
+                        <span class="flex items-center gap-1.5 text-brand"><i class="fas fa-check-circle"></i> Certified Orthodontist</span>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 reveal">
+                    <div class="relative">
+                        <div class="w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gray-100 relative group">
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800" 
+                                 alt="Patient smiling with dental braces" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 text-white flex justify-between items-end">
+                                <div>
+                                    <p class="font-extrabold text-lg">Orthodontic Treatment Suite</p>
+                                    <p class="text-xs text-teal-200">Gentle alignment customized for teens & adults</p>
+                                </div>
+                                <span class="bg-[#FF6B35] text-[#0B2523] text-xs font-bold px-3 py-1.5 rounded-full shadow">
+                                    ₱5k Downpayment
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. MAIN CONTENT CONTAINER: 2-COLUMN LAYOUT WITH STICKY TABLE OF CONTENTS -->
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+            <div class="flex flex-col lg:flex-row gap-12 items-start">
+                
+                <!-- STICKY SIDEBAR: SUMMARY OF CONTENT & QUICK BOOKING (Primacare Inspired) -->
+                <aside class="w-full lg:w-1/3 lg:sticky lg:top-28 space-y-6 order-2 lg:order-2">
+                    <!-- Summary of Content Navigation Box -->
+                    <div class="bg-gradient-to-br from-[#F0FDFB] to-[#E2F7EF] rounded-2xl p-6 border border-teal-200/70 shadow-sm">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-teal-200">
+                            <h3 class="font-extrabold text-dark text-base flex items-center gap-2">
+                                <i class="fas fa-list-ul text-brand"></i> Summary of Content
+                            </h3>
+                            <span class="text-[11px] font-bold text-brand bg-teal-100 px-2 py-0.5 rounded">Quick Jump</span>
+                        </div>
+                        <nav aria-label="Table of contents" class="space-y-1.5 text-sm">
+                            <a href="#overview" class="toc-link block py-2 px-3 rounded-lg text-gray-700 hover:text-brand hover:bg-white font-medium transition flex items-center justify-between">
+                                <span>1. Overview & Types of Braces</span>
+                                <i class="fas fa-chevron-right text-xs opacity-40"></i>
+                            </a>
+                            <a href="#who-needs-braces" class="toc-link block py-2 px-3 rounded-lg text-gray-700 hover:text-brand hover:bg-white font-medium transition flex items-center justify-between">
+                                <span>2. Who Needs Orthodontics?</span>
+                                <i class="fas fa-chevron-right text-xs opacity-40"></i>
+                            </a>
+                            <a href="#color-of-braces" class="toc-link block py-2 px-3 rounded-lg text-brand bg-white font-bold transition shadow-sm border border-teal-100 flex items-center justify-between">
+                                <span class="flex items-center gap-1.5"><i class="fas fa-palette text-accent"></i> 3. Color of Braces Visualizer</span>
+                                <span class="text-[10px] bg-accent text-white px-1.5 py-0.5 rounded font-extrabold uppercase">Interactive</span>
+                            </a>
+                            <a href="#benefits-considerations" class="toc-link block py-2 px-3 rounded-lg text-gray-700 hover:text-brand hover:bg-white font-medium transition flex items-center justify-between">
+                                <span>4. Benefits & Things to Consider</span>
+                                <i class="fas fa-chevron-right text-xs opacity-40"></i>
+                            </a>
+                            <a href="#treatment-steps" class="toc-link block py-2 px-3 rounded-lg text-gray-700 hover:text-brand hover:bg-white font-medium transition flex items-center justify-between">
+                                <span>5. Step-by-Step Procedure</span>
+                                <i class="fas fa-chevron-right text-xs opacity-40"></i>
+                            </a>
+                            <a href="#care-and-food" class="toc-link block py-2 px-3 rounded-lg text-gray-700 hover:text-brand hover:bg-white font-medium transition flex items-center justify-between">
+                                <span>6. Braces Care & Food Guide</span>
+                                <i class="fas fa-chevron-right text-xs opacity-40"></i>
+                            </a>
+                            <a href="#pricing-installments" class="toc-link block py-2 px-3 rounded-lg text-gray-700 hover:text-brand hover:bg-white font-medium transition flex items-center justify-between">
+                                <span>7. Pricing & Installment Terms</span>
+                                <i class="fas fa-chevron-right text-xs opacity-40"></i>
+                            </a>
+                            <a href="#faqs" class="toc-link block py-2 px-3 rounded-lg text-gray-700 hover:text-brand hover:bg-white font-medium transition flex items-center justify-between">
+                                <span>8. Frequently Asked Questions</span>
+                                <i class="fas fa-chevron-right text-xs opacity-40"></i>
+                            </a>
+                            <a href="#more-services" class="toc-link block py-2 px-3 rounded-lg text-gray-700 hover:text-brand hover:bg-white font-medium transition flex items-center justify-between">
+                                <span>9. Explore Other Services</span>
+                                <i class="fas fa-chevron-right text-xs opacity-40"></i>
+                            </a>
+                        </nav>
+                    </div>
+
+                    <!-- Quick Consultation Sticky Card -->
+                    <div class="bg-gradient-to-br from-[#093E3A] via-[#0F766E] to-[#115E59] text-white rounded-2xl p-6 shadow-xl relative overflow-hidden border border-teal-400/20">
+                        <div class="absolute -right-4 -bottom-4 text-white/10 text-8xl">
+                            <i class="fas fa-teeth"></i>
+                        </div>
+                        <span class="bg-accent text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full inline-block mb-3">Orthodontic Assessment</span>
+                        <h4 class="text-xl font-extrabold mb-2">Book Your Assessment</h4>
+                        <p class="text-teal-100 text-xs mb-4 leading-relaxed">
+                            Start with only <strong>₱5,000 downpayment</strong>. Schedule your initial consultation and digital x-ray evaluation today.
+                        </p>
+                        <div class="space-y-2.5">
+                            <a href="/#booking?service=dental-braces" class="w-full bg-accent hover:bg-orange-600 text-white py-3 rounded-xl font-bold text-sm transition flex items-center justify-center gap-2 shadow-md">
+                                <i class="fas fa-calendar-check"></i> Schedule Free Consultation
+                            </a>
+                            <a href="tel:+639171234567" data-placeholder="configure-me" class="w-full bg-white/15 hover:bg-white/25 text-white py-2.5 rounded-xl font-bold text-xs transition flex items-center justify-center gap-2">
+                                <i class="fas fa-phone"></i> Call 0917-123-4567
+                            </a>
+                            <a href="viber://chat?number=+639171234567" data-placeholder="configure-me" class="w-full bg-[#7360f2] hover:bg-[#6351df] text-white py-2.5 rounded-xl font-bold text-xs transition flex items-center justify-center gap-2">
+                                <i class="fab fa-viber"></i> Inquire via Viber
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- MAIN ARTICLE CONTENT (Left Column) -->
+                <div class="w-full lg:w-2/3 space-y-16 order-1 lg:order-1">
+                    
+                    <!-- 1. OVERVIEW & TYPES OF BRACES -->
+                    <section id="overview" class="scroll-mt-28 reveal">
+                        <h2 class="text-3xl font-extrabold text-dark mb-4">What Are Dental Braces & How Do They Work?</h2>
+                        <p class="text-gray-600 text-base leading-relaxed mb-8">
+                            Dental braces are precision orthodontic appliances designed to gently guide misaligned teeth, straighten dental arches, and correct functional bite discrepancies. By delivering continuous, calibrated physiological forces, braces signal the surrounding bone tissue to remodel naturally around the tooth roots.
+                        </p>
+
+                        <!-- Types of Braces Comparison Cards -->
+                        <h3 class="text-xl font-bold text-dark mb-4 flex items-center gap-2">
+                            <i class="fas fa-layer-group text-brand"></i> 3 Orthodontic Bracket Options Available
+                        </h3>
+                        <div class="space-y-6">
+                            <!-- Metal Braces -->
+                            <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:border-brand transition">
+                                <div class="flex flex-col sm:flex-row gap-6 items-start">
+                                    <div class="sm:w-1/3 w-full h-40 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1571772930222-f218468bd77d?auto=format&fit=crop&q=80&w=400" 
+                                             alt="Traditional metal braces on teeth" 
+                                             class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="sm:w-2/3">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="text-lg font-extrabold text-dark">Traditional Metal Braces</h4>
+                                            <span class="text-xs bg-blue-50 text-brand px-2.5 py-1 rounded-full font-bold">Most Popular</span>
+                                        </div>
+                                        <p class="text-gray-600 text-sm mb-3">
+                                            Constructed from high-grade biocompatible stainless steel. Highly durable and reliable for treating all types of severe crowding and bite misalignment.
+                                        </p>
+                                        <div class="text-xs text-gray-500 space-y-1">
+                                            <p><strong>Customization:</strong> Change colorful elastic ligatures every monthly visit!</p>
+                                            <p><strong>Best for:</strong> Teenagers, students, and budget-conscious patients.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ceramic Braces -->
+                            <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:border-brand transition">
+                                <div class="flex flex-col sm:flex-row gap-6 items-start">
+                                    <div class="sm:w-1/3 w-full h-40 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=400" 
+                                             alt="Discreet ceramic braces on teeth" 
+                                             class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="sm:w-2/3">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="text-lg font-extrabold text-dark">Aesthetic Ceramic Braces</h4>
+                                            <span class="text-xs bg-amber-50 text-accent px-2.5 py-1 rounded-full font-bold">Discreet & Aesthetic</span>
+                                        </div>
+                                        <p class="text-gray-600 text-sm mb-3">
+                                            Made from translucent monocrystalline or tooth-colored ceramic brackets that blend subtly with your natural enamel.
+                                        </p>
+                                        <div class="text-xs text-gray-500 space-y-1">
+                                            <p><strong>Customization:</strong> Clear or pearl ligature bands for an invisible finish.</p>
+                                            <p><strong>Best for:</strong> Working professionals, executives, and public-facing individuals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Self-Ligating Brackets -->
+                            <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:border-brand transition">
+                                <div class="flex flex-col sm:flex-row gap-6 items-start">
+                                    <div class="sm:w-1/3 w-full h-40 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=400" 
+                                             alt="Advanced self-ligating braces technology" 
+                                             class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="sm:w-2/3">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="text-lg font-extrabold text-dark">Self-Ligating Braces</h4>
+                                            <span class="text-xs bg-purple-50 text-purple-700 px-2.5 py-1 rounded-full font-bold">Low Friction</span>
+                                        </div>
+                                        <p class="text-gray-600 text-sm mb-3">
+                                            Features a built-in specialized sliding clip door mechanism holding the archwire, eliminating the need for elastic rubber bands and minimizing frictional resistance.
+                                        </p>
+                                        <div class="text-xs text-gray-500 space-y-1">
+                                            <p><strong>Comfort:</strong> Easier hygiene maintenance and gentler biological forces.</p>
+                                            <p><strong>Best for:</strong> Patients wanting fewer emergency visits and faster adjustment sessions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2. WHO NEEDS BRACES? -->
+                    <section id="who-needs-braces" class="scroll-mt-28 reveal">
+                        <h2 class="text-3xl font-extrabold text-dark mb-4">Who Needs Orthodontic Treatment?</h2>
+                        <p class="text-gray-600 text-base mb-6 leading-relaxed">
+                            Orthodontic treatment isn't just about cosmetic alignment—it's vital for long-term masticatory health, preventing premature tooth wear, and reducing plaque traps that lead to periodontal disease.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="p-5 bg-white rounded-2xl border border-gray-200 shadow-sm flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-blue-100 text-brand flex items-center justify-center flex-shrink-0 mt-0.5 font-bold"><i class="fas fa-check"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-sm mb-1">Severe Crowding & Overlap</h4>
+                                    <p class="text-xs text-gray-500">Insufficient jaw space forcing teeth to twist or push in front of one another.</p>
+                                </div>
+                            </div>
+                            <div class="p-5 bg-white rounded-2xl border border-gray-200 shadow-sm flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-blue-100 text-brand flex items-center justify-center flex-shrink-0 mt-0.5 font-bold"><i class="fas fa-check"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-sm mb-1">Tooth Gaps (Diastema)</h4>
+                                    <p class="text-xs text-gray-500">Noticeable spaces between central incisors or premolars trapping food debris.</p>
+                                </div>
+                            </div>
+                            <div class="p-5 bg-white rounded-2xl border border-gray-200 shadow-sm flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-blue-100 text-brand flex items-center justify-center flex-shrink-0 mt-0.5 font-bold"><i class="fas fa-check"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-sm mb-1">Overbite / Deep Bite</h4>
+                                    <p class="text-xs text-gray-500">Upper front teeth excessively cover lower teeth, sometimes biting into lower gums.</p>
+                                </div>
+                            </div>
+                            <div class="p-5 bg-white rounded-2xl border border-gray-200 shadow-sm flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-blue-100 text-brand flex items-center justify-center flex-shrink-0 mt-0.5 font-bold"><i class="fas fa-check"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-sm mb-1">Underbite & Crossbite</h4>
+                                    <p class="text-xs text-gray-500">Lower teeth protruding past upper teeth, placing abnormal stress on jaw joints (TMJ).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3. INTERACTIVE BRACES COLOR VISUALIZER (#color-of-braces) (PRIMACARE INSPIRED) -->
+                    <section id="color-of-braces" class="scroll-mt-28 bg-gradient-to-b from-blue-50/60 to-white rounded-3xl p-6 sm:p-10 border-2 border-brand/20 shadow-md reveal">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-accent text-white text-xs font-extrabold uppercase px-3 py-1 rounded-full">Interactive Feature</span>
+                            <span class="text-xs text-brand font-bold"><i class="fas fa-magic mr-1"></i> Live Smile Preview</span>
+                        </div>
+                        <h2 class="text-3xl font-extrabold text-dark mb-3">Color of Braces Visualizer</h2>
+                        <p class="text-gray-600 text-sm mb-8 leading-relaxed">
+                            Inspired by modern orthodontic color wheels: pick your favorite elastic ligature rubber band color and toggle between metal and ceramic brackets to see how your smile will look before your appointment!
+                        </p>
+
+                        <!-- Bracket Material Selector -->
+                        <div class="flex flex-wrap items-center gap-4 mb-8 p-3 bg-white rounded-2xl border border-gray-200 w-fit">
+                            <span class="text-xs font-bold text-gray-500 uppercase px-2">Bracket Type:</span>
+                            <button type="button" id="btn-bracket-metal" class="px-4 py-2 rounded-xl text-xs font-bold bg-brand text-white shadow transition" onclick="setBracketStyle('metal')">
+                                <i class="fas fa-square mr-1.5 text-gray-300"></i> Stainless Steel (Metal)
+                            </button>
+                            <button type="button" id="btn-bracket-ceramic" class="px-4 py-2 rounded-xl text-xs font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 transition" onclick="setBracketStyle('ceramic')">
+                                <i class="fas fa-gem mr-1.5 text-sky-400"></i> Aesthetic Ceramic (Clear)
+                            </button>
+                        </div>
+
+                        <!-- Interactive Smile Arch SVG Display -->
+                        <div class="bg-gradient-to-b from-slate-900 to-dark p-6 sm:p-8 rounded-3xl shadow-inner text-center mb-8 relative overflow-hidden">
+                            <div class="text-xs uppercase tracking-widest text-blue-300 font-bold mb-4">
+                                Interactive Upper Arch Bracket Preview
+                            </div>
+
+                            <!-- SVG Dental Arch with Ligature Bands -->
+                            <div class="max-w-md mx-auto my-4 py-2">
+                                <svg viewBox="0 0 500 240" class="w-full h-auto drop-shadow-2xl" id="braces-svg">
+                                    <defs>
+                                        <!-- Enamel gradient -->
+                                        <linearGradient id="enamelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#fff5eb" />
+                                            <stop offset="40%" stop-color="#ffffff" />
+                                            <stop offset="100%" stop-color="#f0f3f6" />
+                                        </linearGradient>
+                                        <!-- Metal bracket gradient -->
+                                        <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#e2e8f0" />
+                                            <stop offset="50%" stop-color="#94a3b8" />
+                                            <stop offset="100%" stop-color="#64748b" />
+                                        </linearGradient>
+                                        <!-- Ceramic bracket gradient -->
+                                        <linearGradient id="ceramicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+                                            <stop offset="100%" stop-color="#e2e8f0" stop-opacity="0.75" />
+                                        </linearGradient>
+                                    </defs>
+
+                                    <!-- Gum line curve -->
+                                    <path d="M 30,50 Q 140,20 250,22 Q 360,20 470,50 C 470,75 30,75 30,50 Z" fill="#e07a82" opacity="0.9" />
+
+                                    <!-- Teeth 1 to 6 (Canine, Lateral, Central, Central, Lateral, Canine) -->
+                                    <!-- Tooth 1: Left Canine -->
+                                    <path d="M 45,55 Q 50,150 78,175 Q 98,150 102,55 Z" fill="url(#enamelGrad)" stroke="#cbd5e1" stroke-width="2" />
+                                    <!-- Tooth 2: Left Lateral Incisor -->
+                                    <path d="M 105,53 Q 110,165 135,178 Q 165,168 170,52 Z" fill="url(#enamelGrad)" stroke="#cbd5e1" stroke-width="2" />
+                                    <!-- Tooth 3: Left Central Incisor -->
+                                    <path d="M 175,50 Q 180,185 210,192 Q 242,185 245,50 Z" fill="url(#enamelGrad)" stroke="#cbd5e1" stroke-width="2" />
+                                    <!-- Tooth 4: Right Central Incisor -->
+                                    <path d="M 255,50 Q 258,185 290,192 Q 320,185 325,50 Z" fill="url(#enamelGrad)" stroke="#cbd5e1" stroke-width="2" />
+                                    <!-- Tooth 5: Right Lateral Incisor -->
+                                    <path d="M 330,52 Q 335,168 365,178 Q 390,165 395,53 Z" fill="url(#enamelGrad)" stroke="#cbd5e1" stroke-width="2" />
+                                    <!-- Tooth 6: Right Canine -->
+                                    <path d="M 398,55 Q 402,150 422,175 Q 450,150 455,55 Z" fill="url(#enamelGrad)" stroke="#cbd5e1" stroke-width="2" />
+
+                                    <!-- Archwire running horizontally -->
+                                    <path d="M 50,118 Q 250,140 450,118" fill="none" stroke="#64748b" stroke-width="4" stroke-linecap="round" />
+                                    <path d="M 50,117 Q 250,139 450,117" fill="none" stroke="#e2e8f0" stroke-width="1.5" />
+
+                                    <!-- Brackets & Ligature Bands on each tooth -->
+                                    <!-- Tooth 1 Bracket -->
+                                    <g transform="translate(68, 102)">
+                                        <!-- Ligature O-ring band -->
+                                        <rect class="ligature-band" x="-3" y="-3" width="22" height="22" rx="6" fill="#1d4ed8" stroke="#ffffff" stroke-width="1.5" />
+                                        <!-- Bracket body -->
+                                        <rect class="bracket-body" x="0" y="0" width="16" height="16" rx="2" fill="url(#metalGrad)" stroke="#475569" stroke-width="1" />
+                                        <line x1="0" y1="8" x2="16" y2="8" stroke="#334155" stroke-width="2" />
+                                    </g>
+
+                                    <!-- Tooth 2 Bracket -->
+                                    <g transform="translate(133, 107)">
+                                        <rect class="ligature-band" x="-4" y="-4" width="24" height="24" rx="7" fill="#1d4ed8" stroke="#ffffff" stroke-width="1.5" />
+                                        <rect class="bracket-body" x="0" y="0" width="16" height="16" rx="2" fill="url(#metalGrad)" stroke="#475569" stroke-width="1" />
+                                        <line x1="0" y1="8" x2="16" y2="8" stroke="#334155" stroke-width="2" />
+                                    </g>
+
+                                    <!-- Tooth 3 Bracket (Central) -->
+                                    <g transform="translate(202, 114)">
+                                        <rect class="ligature-band" x="-4" y="-4" width="26" height="26" rx="8" fill="#1d4ed8" stroke="#ffffff" stroke-width="2" />
+                                        <rect class="bracket-body" x="0" y="0" width="18" height="18" rx="2" fill="url(#metalGrad)" stroke="#475569" stroke-width="1" />
+                                        <line x1="0" y1="9" x2="18" y2="9" stroke="#334155" stroke-width="2" />
+                                    </g>
+
+                                    <!-- Tooth 4 Bracket (Central) -->
+                                    <g transform="translate(280, 114)">
+                                        <rect class="ligature-band" x="-4" y="-4" width="26" height="26" rx="8" fill="#1d4ed8" stroke="#ffffff" stroke-width="2" />
+                                        <rect class="bracket-body" x="0" y="0" width="18" height="18" rx="2" fill="url(#metalGrad)" stroke="#475569" stroke-width="1" />
+                                        <line x1="0" y1="9" x2="18" y2="9" stroke="#334155" stroke-width="2" />
+                                    </g>
+
+                                    <!-- Tooth 5 Bracket -->
+                                    <g transform="translate(351, 107)">
+                                        <rect class="ligature-band" x="-4" y="-4" width="24" height="24" rx="7" fill="#1d4ed8" stroke="#ffffff" stroke-width="1.5" />
+                                        <rect class="bracket-body" x="0" y="0" width="16" height="16" rx="2" fill="url(#metalGrad)" stroke="#475569" stroke-width="1" />
+                                        <line x1="0" y1="8" x2="16" y2="8" stroke="#334155" stroke-width="2" />
+                                    </g>
+
+                                    <!-- Tooth 6 Bracket -->
+                                    <g transform="translate(416, 102)">
+                                        <rect class="ligature-band" x="-3" y="-3" width="22" height="22" rx="6" fill="#1d4ed8" stroke="#ffffff" stroke-width="1.5" />
+                                        <rect class="bracket-body" x="0" y="0" width="16" height="16" rx="2" fill="url(#metalGrad)" stroke="#475569" stroke-width="1" />
+                                        <line x1="0" y1="8" x2="16" y2="8" stroke="#334155" stroke-width="2" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <p class="text-xs text-slate-300">
+                                Currently Previewing: <span id="current-color-name" class="font-extrabold text-white">Royal Blue</span> on <span id="current-bracket-label" class="font-bold text-accent">Stainless Steel Brackets</span>
+                            </p>
+                        </div>
+
+                        <!-- 12 Color Swatches Palette (Primacare Inspired) -->
+                        <h4 class="font-bold text-dark text-sm mb-3">Choose Your Ligature Color:</h4>
+                        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 mb-6" id="color-swatches-grid">
+                            <!-- Swatch 1: Royal Blue -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border-2 border-brand shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Royal Blue', '#1d4ed8', '5', 'Creates a strong contrast that makes your enamel appear visibly whiter! Our #1 patient favorite.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #1d4ed8;"></span>
+                                <span class="text-[11px] font-bold text-dark">Royal Blue</span>
+                            </button>
+                            <!-- Swatch 2: Sky Blue -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Sky Blue', '#0ea5e9', '4.5', 'Fresh, bright, and vibrant. Looks clean and modern with either metal or ceramic.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #0ea5e9;"></span>
+                                <span class="text-[11px] font-bold text-dark">Sky Blue</span>
+                            </button>
+                            <!-- Swatch 3: Emerald Green -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Emerald Green', '#059669', '4.5', 'Deep jewel tone that resists food staining and provides great contrast.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #059669;"></span>
+                                <span class="text-[11px] font-bold text-dark">Emerald</span>
+                            </button>
+                            <!-- Swatch 4: Ruby Red -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Ruby Red', '#dc2626', '4', 'Festive, bold, and energetic. Looks stunning for holiday celebrations and graduations.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #dc2626;"></span>
+                                <span class="text-[11px] font-bold text-dark">Ruby Red</span>
+                            </button>
+                            <!-- Swatch 5: Hot Pink -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Magenta Pink', '#ec4899', '4.5', 'Playful, trendy, and stylish. Very popular among teens and college students.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #ec4899;"></span>
+                                <span class="text-[11px] font-bold text-dark">Magenta</span>
+                            </button>
+                            <!-- Swatch 6: Deep Violet -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Deep Violet', '#7c3aed', '5', 'Outstanding whitening effect. Dark purple pigments counteract yellowish undertones in teeth.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #7c3aed;"></span>
+                                <span class="text-[11px] font-bold text-dark">Deep Violet</span>
+                            </button>
+                            <!-- Swatch 7: Turquoise -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Aqua Turquoise', '#14b8a6', '4', 'Refreshing tropical vibe. Perfect for summer and youthful smiles.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #14b8a6;"></span>
+                                <span class="text-[11px] font-bold text-dark">Turquoise</span>
+                            </button>
+                            <!-- Swatch 8: Pearl Silver -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Pearl Silver', '#94a3b8', '4.5', 'Monochromatic elegance. Seamlessly matches stainless steel brackets without standing out.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #94a3b8;"></span>
+                                <span class="text-[11px] font-bold text-dark">Silver Grey</span>
+                            </button>
+                            <!-- Swatch 9: Obsidian Black -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Obsidian Black', '#1e293b', '4', 'Sharp contemporary statement. Pairs well with minimalist fashion.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #1e293b;"></span>
+                                <span class="text-[11px] font-bold text-dark">Obsidian</span>
+                            </button>
+                            <!-- Swatch 10: Soft Coral -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Soft Coral', '#fb7185', '4', 'Warm pastel peach-pink that softens your smile aesthetic.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #fb7185;"></span>
+                                <span class="text-[11px] font-bold text-dark">Coral Rose</span>
+                            </button>
+                            <!-- Swatch 11: Lavender -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Lilac Lavender', '#c084fc', '4.5', 'Delicate aesthetic purple. Subtly brightens teeth without heavy saturation.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10" style="background-color: #c084fc;"></span>
+                                <span class="text-[11px] font-bold text-dark">Lavender</span>
+                            </button>
+                            <!-- Swatch 12: Clear / Pearl -->
+                            <button type="button" class="color-swatch-btn p-2 rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col items-center gap-1.5 hover:scale-105 transition" onclick="selectBracesColor('Ice Clear', '#f1f5f9', '3.5', 'Inconspicuous match for ceramic brackets. Note: requires avoiding coffee/curry to prevent food discoloration.')">
+                                <span class="w-8 h-8 rounded-full shadow-inner border border-black/10 bg-gradient-to-br from-white to-slate-200" style="background-color: #f1f5f9;"></span>
+                                <span class="text-[11px] font-bold text-dark">Clear / Ice</span>
+                            </button>
+                        </div>
+
+                        <!-- Active Color Advice & Dentist Recommendation Card -->
+                        <div class="bg-white p-5 rounded-2xl border border-blue-100 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                            <div>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="text-xs font-bold text-brand uppercase tracking-wider">Dentist Advice:</span>
+                                    <span id="color-rating-stars" class="text-amber-500 text-xs font-bold">★★★★★ Enamel Brightening</span>
+                                </div>
+                                <p id="color-advice-text" class="text-gray-600 text-xs leading-relaxed max-w-lg">
+                                    Creates a strong contrast that makes your enamel appear visibly whiter! Our #1 patient favorite.
+                                </p>
+                            </div>
+                            <a id="save-color-btn" href="/#booking?service=dental-braces" class="bg-brand hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-bold text-xs transition flex-shrink-0 shadow flex items-center gap-2">
+                                <i class="fas fa-check"></i> Choose This for Consult
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- 4. BENEFITS & CONSIDERATIONS -->
+                    <section id="benefits-considerations" class="scroll-mt-28 reveal">
+                        <h2 class="text-3xl font-extrabold text-dark mb-6">Benefits & Important Considerations</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Benefits -->
+                            <div class="bg-secondary p-6 rounded-2xl border border-blue-100">
+                                <h3 class="font-extrabold text-brand text-lg mb-4 flex items-center gap-2">
+                                    <i class="fas fa-smile text-brand"></i> Long-Term Benefits
+                                </h3>
+                                <ul class="space-y-3 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2.5"><i class="fas fa-check text-brand mt-1"></i> <strong>Balanced Facial Symmetry:</strong> Straight teeth support natural lip posture and facial aesthetics.</li>
+                                    <li class="flex items-start gap-2.5"><i class="fas fa-check text-brand mt-1"></i> <strong>Effortless Oral Hygiene:</strong> Removes tight food traps, reducing risk of tartar buildup and cavities.</li>
+                                    <li class="flex items-start gap-2.5"><i class="fas fa-check text-brand mt-1"></i> <strong>Even Chewing Pressure:</strong> Protects enamel from premature fractures and relieves TMJ tension.</li>
+                                    <li class="flex items-start gap-2.5"><i class="fas fa-check text-brand mt-1"></i> <strong>Lifetime Smile Confidence:</strong> A confident smile opens doors in career, social, and academic life.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Considerations -->
+                            <div class="bg-orange-50/70 p-6 rounded-2xl border border-orange-100">
+                                <h3 class="font-extrabold text-accent text-lg mb-4 flex items-center gap-2">
+                                    <i class="fas fa-info-circle text-accent"></i> Good Things to Know
+                                </h3>
+                                <ul class="space-y-3 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2.5"><i class="fas fa-clock text-accent mt-1"></i> <strong>Duration:</strong> Most full alignment cases span between 12 to 24 months.</li>
+                                    <li class="flex items-start gap-2.5"><i class="fas fa-utensils text-accent mt-1"></i> <strong>Food Habits:</strong> Hard nuts, whole apples, and chewing ice must be avoided.</li>
+                                    <li class="flex items-start gap-2.5"><i class="fas fa-calendar-alt text-accent mt-1"></i> <strong>Monthly Visits:</strong> Regular 4–6 week adjustment visits keep your progress on schedule.</li>
+                                    <li class="flex items-start gap-2.5"><i class="fas fa-shield text-accent mt-1"></i> <strong>Retainer Phase:</strong> Clear or Hawley retainers protect your aligned smile after debonding.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 5. STEP-BY-STEP PROCEDURE -->
+                    <section id="treatment-steps" class="scroll-mt-28 reveal">
+                        <h2 class="text-3xl font-extrabold text-dark mb-6">Step-by-Step Orthodontic Journey</h2>
+                        <div class="space-y-4">
+                            <div class="flex gap-4 p-5 bg-white rounded-2xl border border-gray-200 shadow-sm">
+                                <div class="w-10 h-10 rounded-xl bg-brand text-white flex items-center justify-center font-extrabold flex-shrink-0">1</div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-base mb-1">Diagnostic Consultation & Records</h4>
+                                    <p class="text-sm text-gray-600">Complete clinical exam, panoramic x-rays, study cast impressions, and facial photos to map out your individualized biomechanical plan.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 p-5 bg-white rounded-2xl border border-gray-200 shadow-sm">
+                                <div class="w-10 h-10 rounded-xl bg-brand text-white flex items-center justify-center font-extrabold flex-shrink-0">2</div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-base mb-1">Bonding Day (Bracket Placement)</h4>
+                                    <p class="text-sm text-gray-600">Teeth surfaces are meticulously cleaned and conditioned. Brackets are bonded with dental adhesive, and flexible nickel-titanium archwires are engaged.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 p-5 bg-white rounded-2xl border border-gray-200 shadow-sm">
+                                <div class="w-10 h-10 rounded-xl bg-brand text-white flex items-center justify-center font-extrabold flex-shrink-0">3</div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-base mb-1">Monthly Archwire Adjustments</h4>
+                                    <p class="text-sm text-gray-600">Every 4 to 6 weeks, visit our clinic to switch ligature colors, activate teeth movements, and check overall oral hygiene.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 p-5 bg-white rounded-2xl border border-gray-200 shadow-sm">
+                                <div class="w-10 h-10 rounded-xl bg-brand text-white flex items-center justify-center font-extrabold flex-shrink-0">4</div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-base mb-1">Debonding & Retainer Delivery</h4>
+                                    <p class="text-sm text-gray-600">Brackets are comfortably removed, adhesive is smoothly polished away, and your custom retainers are fitted to lock in your lifelong smile.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 6. BRACES CARE & FOOD GUIDE -->
+                    <section id="care-and-food" class="scroll-mt-28 reveal">
+                        <h2 class="text-3xl font-extrabold text-dark mb-4">Braces Care & Eating Guide</h2>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                            Protect your brackets from snapping off and safeguard your enamel against white spots during active treatment:
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-green-50 p-5 rounded-2xl border border-green-200">
+                                <h4 class="font-bold text-green-900 text-sm mb-3 flex items-center gap-2">
+                                    <i class="fas fa-circle-check text-green-600"></i> Recommended Braces-Friendly Foods
+                                </h4>
+                                <ul class="text-xs text-green-800 space-y-2">
+                                    <li>• Steamed fish, soft chicken, and eggs</li>
+                                    <li>• Rice porridge (lugaw), oatmeal, pasta, and mashed potatoes</li>
+                                    <li>• Yogurt, smoothies, bananas, and soft cheeses</li>
+                                    <li>• Soups and tender cooked vegetables</li>
+                                </ul>
+                            </div>
+                            <div class="bg-red-50 p-5 rounded-2xl border border-red-200">
+                                <h4 class="font-bold text-red-900 text-sm mb-3 flex items-center gap-2">
+                                    <i class="fas fa-circle-xmark text-red-600"></i> Foods to Avoid
+                                </h4>
+                                <ul class="text-xs text-red-800 space-y-2">
+                                    <li>• Sticky candies: toffees, caramels, bubblegum</li>
+                                    <li>• Hard snacks: corn chips, popcorn kernels, ice cubes</li>
+                                    <li>• Biting into whole apples or corn on the cob (cut into small slices first!)</li>
+                                    <li>• Sugary sodas that pool around bracket bases</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-blue-50 rounded-xl border border-blue-200 text-xs text-brand flex items-start gap-3">
+                            <i class="fas fa-info-circle text-base mt-0.5"></i>
+                            <p><strong>Orthodontic Relief Wax:</strong> We provide complimentary medical wax kits on your bonding day. If a bracket edge irritates your cheek during the first week, roll a pea-sized wax ball and apply it directly onto the bracket for instant comfort.</p>
+                        </div>
+                    </section>
+
+                    <!-- 7. PRICING & INSTALLMENT TERMS -->
+                    <section id="pricing-installments" class="scroll-mt-28 reveal">
+                        <h2 class="text-3xl font-extrabold text-dark mb-6">Transparent Pricing & Installment Terms</h2>
+                        <div class="bg-white p-8 rounded-3xl border-2 border-brand/20 shadow-md">
+                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 pb-6 border-b border-gray-100">
+                                <div>
+                                    <span class="text-xs font-bold text-brand uppercase tracking-wider">Orthodontic Package</span>
+                                    <h3 class="text-2xl font-extrabold text-dark mt-1">Metal & Ceramic Braces</h3>
+                                    <p class="text-xs text-gray-500">Comprehensive upper and lower dental arch alignment</p>
+                                </div>
+                                <div class="text-left sm:text-right">
+                                    <p class="text-xs text-gray-400 font-bold uppercase">Downpayment Starting At</p>
+                                    <p class="text-4xl font-extrabold text-brand">₱5,000</p>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 text-xs text-gray-600">
+                                <div class="p-4 bg-gray-50 rounded-xl">
+                                    <p class="font-bold text-dark text-sm mb-1">Low Initial Payment</p>
+                                    <p>Start your smile alignment on bonding day with ₱5,000 downpayment.</p>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-xl">
+                                    <p class="font-bold text-dark text-sm mb-1">Monthly Adjustments</p>
+                                    <p>Remaining balance split into affordable ₱1,000 - ₱1,500 monthly visit payments.</p>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-xl">
+                                    <p class="font-bold text-dark text-sm mb-1">Flexible Payments</p>
+                                    <p>Cash, GCash, Maya, and major credit cards accepted with zero hidden charges.</p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="/#booking?service=dental-braces" class="bg-accent hover:bg-orange-600 text-white px-8 py-3.5 rounded-full font-bold text-sm transition inline-block shadow-md">
+                                    Schedule Orthodontic Assessment
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 8. FREQUENTLY ASKED QUESTIONS -->
+                    <section id="faqs" class="scroll-mt-28 reveal">
+                        <h2 class="text-3xl font-extrabold text-dark mb-6">Frequently Asked Questions</h2>
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                                <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px]" aria-expanded="false" aria-controls="faq-ans-1">
+                                    <span class="font-bold text-dark text-sm">How long will I need to wear braces?</span>
+                                    <i class="fas fa-chevron-down text-brand transition-transform"></i>
+                                </button>
+                                <div id="faq-ans-1" class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-3">
+                                    Most cases range between 12 and 24 months. Minor spacing issues can take under a year, while complex bite adjustments take longer. Consistently keeping monthly adjustment appointments is the fastest way to stay on schedule.
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                                <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px]" aria-expanded="false" aria-controls="faq-ans-2">
+                                    <span class="font-bold text-dark text-sm">Will I definitely need teeth extracted?</span>
+                                    <i class="fas fa-chevron-down text-brand transition-transform"></i>
+                                </button>
+                                <div id="faq-ans-2" class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-3">
+                                    Not necessarily! Extractions are only recommended when severe jaw crowding or dental protrusion prevents arch alignment without exceeding biological bone limits. We always aim to preserve healthy natural teeth whenever possible.
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                                <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px]" aria-expanded="false" aria-controls="faq-ans-3">
+                                    <span class="font-bold text-dark text-sm">Can adults get braces too?</span>
+                                    <i class="fas fa-chevron-down text-brand transition-transform"></i>
+                                </button>
+                                <div id="faq-ans-3" class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-3">
+                                    Absolutely! Healthy teeth can be biologically guided at any age. Over 40% of our orthodontic patients are working professionals choosing discreet ceramic brackets or metal braces.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 9. EXPLORE MORE DENTAL SERVICES (Primacare Inspired) -->
+                    <section id="more-services" class="scroll-mt-28 reveal pt-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <span class="text-xs font-bold text-brand uppercase tracking-wider">Comprehensive Dental Care</span>
+                                <h2 class="text-2xl font-extrabold text-dark mt-1">Explore More Dental Services</h2>
+                            </div>
+                            <a href="/services/" class="text-brand font-bold text-sm hover:underline flex items-center gap-1">
+                                View All (8) <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <!-- Service 1: Oral Prophylaxis -->
+                            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                                <div class="h-36 overflow-hidden bg-gray-100">
+                                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=400" 
+                                         alt="Oral Prophylaxis teeth cleaning" 
+                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <div class="p-5 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="font-bold text-dark text-base">Oral Prophylaxis (Cleaning)</h4>
+                                            <span class="text-xs font-bold text-brand">From ₱800</span>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mb-4">Essential ultrasonic cleaning to remove plaque and tartar around brackets during braces wear.</p>
+                                    </div>
+                                    <a href="/services/oral-prophylaxis/" class="text-accent font-bold text-xs hover:underline flex items-center gap-1">
+                                        View Service Details <i class="fas fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Service 2: Teeth Whitening -->
+                            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                                <div class="h-36 overflow-hidden bg-gray-100">
+                                    <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=400" 
+                                         alt="Teeth Whitening treatment" 
+                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <div class="p-5 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="font-bold text-dark text-base">In-Office Teeth Whitening</h4>
+                                            <span class="text-xs font-bold text-brand">From ₱4,500</span>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mb-4">Celebrate completing braces with a professional laser whitening session to reveal glowing pearlescent teeth.</p>
+                                    </div>
+                                    <a href="/services/teeth-whitening/" class="text-accent font-bold text-xs hover:underline flex items-center gap-1">
+                                        View Service Details <i class="fas fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Service 3: Tooth Extraction -->
+                            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                                <div class="h-36 overflow-hidden bg-gray-100">
+                                    <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=400" 
+                                         alt="Gentle tooth extraction" 
+                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <div class="p-5 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="font-bold text-dark text-base">Tooth & Wisdom Extraction</h4>
+                                            <span class="text-xs font-bold text-brand">From ₱800</span>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mb-4">Gentle, pain-managed extractions when orthodontic spacing or impacted third molars require relief.</p>
+                                    </div>
+                                    <a href="/services/tooth-extraction/" class="text-accent font-bold text-xs hover:underline flex items-center gap-1">
+                                        View Service Details <i class="fas fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Service 4: Porcelain Veneers -->
+                            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                                <div class="h-36 overflow-hidden bg-gray-100">
+                                    <img src="https://images.unsplash.com/photo-1594824813637-2309f44615a6?auto=format&fit=crop&q=80&w=400" 
+                                         alt="Porcelain veneers transformation" 
+                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <div class="p-5 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="font-bold text-dark text-base">Porcelain Veneers</h4>
+                                            <span class="text-xs font-bold text-brand">From ₱15,000</span>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mb-4">Flawless handcrafted porcelain laminates for instant smile makeover and chipped tooth repair.</p>
+                                    </div>
+                                    <a href="/services/veneers/" class="text-accent font-bold text-xs hover:underline flex items-center gap-1">
+                                        View Service Details <i class="fas fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. FINAL CTA BAND -->
+        <section class="bg-gradient-to-br from-[#093E3A] via-[#0F766E] to-[#115E59] py-16 px-6 text-white text-center shadow-xl border-y border-teal-400/20">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Ready to Align Your Smile?</h2>
+                <p class="text-lg opacity-90 mb-8 max-w-xl mx-auto">Begin your orthodontic journey at [Your Address] with our ₱5,000 downpayment plan. Book your assessment today.</p>
+                <a href="/#booking?service=dental-braces" class="bg-[#FF6B35] text-[#0B2523] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#ff8252] transition shadow-xl inline-block min-h-[44px]">
+                    Book Braces Consultation
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-20 pb-10 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div>
+                <a href="/" class="flex items-center gap-2 mb-6">
+                    <div class="bg-brand text-white p-2 rounded-lg">
+                        <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight">[CLINIC NAME]</span>
+                </a>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    Quality orthodontic care and family dental solutions at [Your Address].
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://facebook.com/[PLACEHOLDER: clinic-facebook]" data-placeholder="configure-me" aria-label="Facebook page" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/[PLACEHOLDER: clinic-instagram]" data-placeholder="configure-me" aria-label="Instagram profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://tiktok.com/@[PLACEHOLDER: clinic-tiktok]" data-placeholder="configure-me" aria-label="TikTok profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="/services/" class="hover:text-white transition">All Dental Services</a></li>
+                    <li><a href="/#why-us" class="hover:text-white transition">Why Choose Us</a></li>
+                    <li><a href="/#promo" class="hover:text-white transition">Monthly Promos</a></li>
+                    <li><a href="/about/" class="hover:text-white transition">About Our Clinic</a></li>
+                    <li><a href="/privacy-policy/" data-placeholder="configure-me" class="hover:text-white transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Our Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="/services/teeth-whitening/" class="hover:text-white transition">Teeth Whitening</a></li>
+                    <li><a href="/services/dental-braces/" class="text-brand font-semibold">Dental Braces</a></li>
+                    <li><a href="/services/tooth-extraction/" class="hover:text-white transition">Tooth Extraction</a></li>
+                    <li><a href="/services/root-canal/" class="hover:text-white transition">Root Canal Treatment</a></li>
+                    <li><a href="/services/dental-implants/" class="hover:text-white transition">Dental Implants</a></li>
+                    <li><a href="/services/veneers/" class="hover:text-white transition">Dental Veneers</a></li>
+                    <li><a href="/services/pedia-dentistry/" class="hover:text-white transition">Pediatric Dentistry</a></li>
+                    <li><a href="/services/oral-prophylaxis/" class="hover:text-white transition">Oral Prophylaxis</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Stay Informed</h4>
+                <p class="text-gray-400 text-sm mb-4">Receive oral health tips and seasonal clinic announcements.</p>
+                <form onsubmit="event.preventDefault(); this.querySelector('p').classList.remove('hidden');" class="space-y-2">
+                    <div class="flex gap-2">
+                        <label for="braces-newsletter-email" class="sr-only">Your email</label>
+                        <input id="braces-newsletter-email" type="email" placeholder="Your email address" required class="bg-white/10 border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-brand w-full text-white">
+                        <button type="submit" aria-label="Subscribe" class="bg-brand px-4 py-3 rounded-lg hover:bg-blue-600 transition min-w-[44px] min-h-[44px] flex items-center justify-center"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+                    <p class="hidden text-xs text-green-400 font-semibold">Thank you for subscribing!</p>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-10 text-center text-gray-500 text-xs">
+            <p>© 2025 [CLINIC NAME]. All rights reserved. | Orthodontic & Dental Care.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING CONTACTS -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-40 items-end">
+        <a href="/#booking?service=dental-braces" aria-label="Book appointment now" class="md:hidden flex items-center gap-2 bg-[#0F766E] text-white px-6 py-4 rounded-full font-bold shadow-2xl animate-bounce min-h-[44px]">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i> BOOK NOW
+        </a>
+        <a href="viber://chat?number=+639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on Viber" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#7360f2] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-viber" aria-hidden="true"></i>
+        </a>
+        <a href="https://wa.me/639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on WhatsApp" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#25D366] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <script>
+        // MOBILE MENU
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (menuBtn && menu) menuBtn.addEventListener('click', () => menu.classList.remove('translate-x-full'));
+        if (closeBtn && menu) closeBtn.addEventListener('click', () => menu.classList.add('translate-x-full'));
+        mobileLinks.forEach(link => link.addEventListener('click', () => { if (menu) menu.classList.add('translate-x-full'); }));
+
+        // REVEAL ANIMATIONS
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // FAQ ACCORDION
+        document.querySelectorAll('.faq-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', (!isExpanded).toString());
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // BRACES COLOR VISUALIZER LOGIC (#color-of-braces)
+        let currentBracketType = 'metal';
+        let currentSelectedColor = { name: 'Royal Blue', hex: '#1d4ed8' };
+
+        window.selectBracesColor = function(name, hex, stars, advice) {
+            currentSelectedColor = { name, hex };
+
+            // Update SVG ligature bands
+            document.querySelectorAll('#braces-svg .ligature-band').forEach(band => {
+                band.setAttribute('fill', hex);
+                band.setAttribute('stroke', currentBracketType === 'ceramic' ? '#ffffff' : '#e2e8f0');
+            });
+
+            // Update labels
+            const nameEl = document.getElementById('current-color-name');
+            const starsEl = document.getElementById('color-rating-stars');
+            const adviceEl = document.getElementById('color-advice-text');
+            const saveBtn = document.getElementById('save-color-btn');
+
+            if (nameEl) nameEl.innerText = name;
+            if (starsEl) starsEl.innerText = `★ ${stars}/5 Enamel Contrast`;
+            if (adviceEl) adviceEl.innerText = advice;
+            if (saveBtn) {
+                saveBtn.href = `/#booking?service=dental-braces&color=${encodeURIComponent(name)}`;
+                saveBtn.onclick = () => {
+                    const params = new URLSearchParams(window.location.search);
+                    sessionStorage.setItem('preferredBracesColor', name);
+                };
+            }
+
+            // Update button active state
+            document.querySelectorAll('.color-swatch-btn').forEach(btn => {
+                const isMatch = btn.textContent.includes(name.split(' ')[0]);
+                if (isMatch) {
+                    btn.classList.add('border-2', 'border-brand', 'scale-105');
+                    btn.classList.remove('border-gray-200');
+                } else {
+                    btn.classList.remove('border-2', 'border-brand', 'scale-105');
+                    btn.classList.add('border-gray-200');
+                }
+            });
+        };
+
+        window.setBracketStyle = function(type) {
+            currentBracketType = type;
+            const metalBtn = document.getElementById('btn-bracket-metal');
+            const ceramicBtn = document.getElementById('btn-bracket-ceramic');
+            const bracketLabel = document.getElementById('current-bracket-label');
+
+            if (type === 'metal') {
+                if (metalBtn) {
+                    metalBtn.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-brand text-white shadow transition';
+                }
+                if (ceramicBtn) {
+                    ceramicBtn.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 transition';
+                }
+                if (bracketLabel) bracketLabel.innerText = 'Stainless Steel Brackets';
+                
+                document.querySelectorAll('#braces-svg .bracket-body').forEach(b => {
+                    b.setAttribute('fill', 'url(#metalGrad)');
+                    b.setAttribute('stroke', '#475569');
+                });
+            } else {
+                if (ceramicBtn) {
+                    ceramicBtn.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-brand text-white shadow transition';
+                }
+                if (metalBtn) {
+                    metalBtn.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 transition';
+                }
+                if (bracketLabel) bracketLabel.innerText = 'Translucent Ceramic Brackets';
+
+                document.querySelectorAll('#braces-svg .bracket-body').forEach(b => {
+                    b.setAttribute('fill', 'url(#ceramicGrad)');
+                    b.setAttribute('stroke', '#cbd5e1');
+                });
+            }
+        };
+
+        // TABLE OF CONTENTS SCROLLSPY
+        const tocLinks = document.querySelectorAll('.toc-link');
+        const sections = document.querySelectorAll('section[id]');
+
+        window.addEventListener('scroll', () => {
+            let currentId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 160;
+                if (window.scrollY >= sectionTop) {
+                    currentId = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === `#${currentId}`) {
+                    link.classList.add('text-brand', 'bg-white', 'font-bold', 'shadow-sm');
+                    link.classList.remove('text-gray-700');
+                } else if (href !== '#color-of-braces') {
+                    link.classList.remove('text-brand', 'bg-white', 'font-bold', 'shadow-sm');
+                    link.classList.add('text-gray-700');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

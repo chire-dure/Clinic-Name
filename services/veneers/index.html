@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & META -->
+    <title>Dental Veneers | [CLINIC NAME] [Your Address]</title>
+    <meta name="description" content="Custom composite & porcelain dental veneers at [Your Address]. Transform chips, gaps, and stains starting at ₱3,500/tooth. Book today!">
+    <link rel="canonical" href="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/veneers/]">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dental Veneers | [CLINIC NAME] [Your Address]">
+    <meta property="og:description" content="Transform your smile with porcelain or composite dental veneers at [Your Address]. Repair chips, gaps, and severe staining with expert cosmetic dentistry.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/veneers/]">
+    <meta property="og:image" content="[PLACEHOLDER: https://www.yourdentalclinicdomain.com/images/og-veneers.jpg]">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/]"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/]"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dental Veneers",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/veneers/]"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Central Clinic Configuration -->
+    <script src="/clinic-config.js"></script>
+
+    <!-- External Assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#0F766E', // Seafoam Teal
+                            light: '#14B8A6',
+                            dark: '#0B524C',
+                        },
+                        seafoam: {
+                            50: '#F0FDFB',
+                            100: '#E1FBF6',
+                            200: '#C4F6EE',
+                            500: '#2DD4BF',
+                            700: '#0F766E',
+                            900: '#134E4A'
+                        },
+                        mint: {
+                            50: '#F2FCF8',
+                            100: '#E2F7EF',
+                            500: '#10B981'
+                        },
+                        secondary: '#F4FAF8',
+                        accent: '#FF6B35',
+                        dark: '#0B2523'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .custom-shadow { box-shadow: 0 10px 30px -5px rgba(15, 118, 110, 0.12); }
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+            .reveal.active { opacity: 1; transform: translateY(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+    </style>
+</head>
+<body class="font-sans text-[#0B2523] bg-[#F4FAF8] overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" aria-label="Main navigation" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-white/95 backdrop-blur-md shadow-sm border-b border-teal-100/60">
+        <a href="/" class="flex items-center gap-2 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-1">
+            <div class="bg-gradient-to-br from-teal-500 to-[#0F766E] text-white p-2.5 rounded-xl group-hover:rotate-12 transition-transform shadow-md shadow-teal-900/10">
+                <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-brand">[CLINIC NAME] <span class="text-accent">[Your Address]</span></span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+            <a href="/about/" class="hover:text-brand transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand py-1 px-2 rounded">About Us</a>
+            <a href="/services/" class="text-brand border-b-2 border-brand pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded font-bold">Services</a>
+            <a href="/#booking" class="bg-[#0F766E] text-white px-6 py-3 rounded-full hover:bg-[#0B524C] transition shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F766E] min-h-[44px] flex items-center justify-center font-bold">Book Appointment</a>
+        </div>
+
+        <button id="mobile-menu-btn" aria-label="Open mobile menu" class="md:hidden text-brand text-2xl p-2 min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 text-2xl font-bold translate-x-full transition-transform duration-300">
+        <button id="close-menu" aria-label="Close mobile menu" class="absolute top-6 right-6 text-3xl text-brand p-2 min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <a href="/" class="mobile-link hover:text-brand transition">Home</a>
+        <a href="/about/" class="mobile-link hover:text-brand transition">About Us</a>
+        <a href="/services/" class="mobile-link text-brand font-bold">Services</a>
+        <a href="/#booking" class="bg-[#0F766E] text-white px-8 py-4 rounded-full min-h-[44px] flex items-center justify-center font-bold">Book Now</a>
+    </div>
+
+    <main class="pt-24 pb-20">
+        <!-- 1. BREADCRUMBS -->
+        <div class="max-w-7xl mx-auto px-6 md:px-12 pt-6">
+            <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-gray-500 mb-6 font-medium">
+                <a href="/" class="hover:text-brand transition">Home</a>
+                <span class="text-gray-300">/</span>
+                <a href="/services/" class="hover:text-brand transition">Services</a>
+                <span class="text-gray-300">/</span>
+                <span class="text-brand font-bold" aria-current="page">Dental Veneers</span>
+            </nav>
+        </div>
+
+        <!-- 2. SERVICE HERO -->
+        <section class="relative bg-gradient-to-b from-[#E7F7F4] via-[#F2FAF8] to-white py-16 px-6 md:px-12 border-b border-teal-100/70 overflow-hidden">
+            <!-- Ambient Glow -->
+            <div class="absolute -top-24 right-0 w-[500px] h-[500px] bg-teal-200/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+            <div class="absolute top-1/2 -left-20 w-[350px] h-[350px] bg-emerald-200/25 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+                <div class="md:w-1/2 reveal">
+                    <span class="bg-teal-100/90 text-[#0F766E] border border-teal-200/70 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block shadow-sm">
+                        Aesthetic Dentistry at [Your Address]
+                    </span>
+                    <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
+                        Custom <span class="text-[#0F766E]">Dental Veneers</span> in [Your Address]
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Achieve a balanced, luminous smile with custom composite and porcelain veneers. Designed to mask chipped edges, slight gaps, and deep enamel discoloration with natural translucency.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/#booking?service=veneers" class="bg-[#0F766E] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0B524C] transition shadow-lg shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Book Veneers Assessment
+                        </a>
+                        <a href="tel:+639171234567" data-placeholder="configure-me" class="border-2 border-[#0F766E] text-[#0F766E] px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0F766E] hover:text-white transition min-h-[44px] flex items-center justify-center">
+                            Call [PLACEHOLDER: Phone]
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 reveal">
+                    <!-- High-Fidelity Operatory Hero Card -->
+                    <div class="w-full aspect-video md:aspect-[4/3] rounded-3xl bg-gradient-to-br from-[#093E3A] via-[#0F766E] to-[#115E59] flex flex-col items-center justify-center text-white p-8 text-center shadow-2xl border border-teal-400/20 relative overflow-hidden group">
+                        <div class="absolute -top-12 -right-12 w-44 h-44 bg-accent/25 rounded-full blur-xl pointer-events-none"></div>
+                        <div class="relative z-10">
+                            <div class="w-20 h-20 bg-white/15 backdrop-blur-md rounded-2xl flex items-center justify-center mx-auto mb-4 border border-white/20 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-sparkles text-4xl text-white/95" aria-hidden="true"></i>
+                            </div>
+                            <p class="text-2xl font-bold">Smile Makeover Design Studio</p>
+                            <p class="text-teal-100 text-sm mt-2 max-w-sm">Ultra-thin porcelain laminates & direct composite smile transformations</p>
+                            <span class="inline-block mt-4 bg-[#FF6B35] text-[#0B2523] text-xs font-extrabold uppercase px-4 py-1.5 rounded-full shadow-sm">From ₱3,500/tooth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. OVERVIEW -->
+        <section class="py-20 px-6 md:px-12 max-w-5xl mx-auto reveal">
+            <h2 class="text-3xl font-extrabold mb-6 text-dark">What are Dental Veneers?</h2>
+            <div class="space-y-5 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    Dental veneers are ultra-thin, custom-fabricated shells bonded to the front (facial) surface of your teeth to enhance their shape, size, color, and overall symmetry. They are an effective cosmetic dentistry option for patients looking to correct cosmetic imperfections that cannot be resolved through teeth whitening alone.
+                </p>
+                <p>
+                    At our clinic at [Your Address], we offer two main veneer modalities:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                        <h3 class="font-bold text-dark text-lg mb-2">Direct Composite Veneers</h3>
+                        <p class="text-gray-600 text-sm">Sculpted directly onto teeth chairside in a single visit using premium resin. Highly budget-friendly and repairable, typically lasting 4 to 7 years with good oral habits.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                        <h3 class="font-bold text-dark text-lg mb-2">Indirect Porcelain / Ceramic Veneers</h3>
+                        <p class="text-gray-600 text-sm">Custom crafted by high-precision dental laboratories from medical-grade ceramic. Exceptional glass-like translucency, highly stain-resistant, and can last 10 to 15+ years.</p>
+                    </div>
+                </div>
+                <p>
+                    Porcelain veneers typically require removing a micro-thin layer of enamel (around 0.3mm to 0.7mm) so the veneer sits flush with the gumline. Because enamel does not grow back, porcelain veneer preparation is a permanent, non-reversible dental decision.
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. WHO IS IT FOR? -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-5xl mx-auto reveal">
+                <h2 class="text-3xl font-extrabold mb-6 text-dark">Is This Treatment Right for You?</h2>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Veneers are ideal for correcting localized aesthetic blemishes in the visible "smile zone":
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Severe Intrinsic Discoloration:</strong> Fluorosis, medication staining, or root canal graying unresponsive to chemical bleaching.</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Chipped or Worn Enamel:</strong> Restoring natural tooth proportions after minor trauma or years of enamel erosion.</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Small Spacing & Gaps:</strong> Closing minor diastemas between front teeth without lengthy braces.</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Irregularly Shaped Teeth:</strong> Correcting "peg laterals" or uneven incisal edges for a harmonious smile.</p>
+                    </div>
+                </div>
+                <div class="p-5 bg-amber-50 rounded-2xl border border-amber-200 text-amber-900 text-sm flex items-start gap-3">
+                    <i class="fas fa-circle-info text-amber-600 text-lg mt-0.5" aria-hidden="true"></i>
+                    <p>
+                        <strong>Contraindications:</strong> Veneers are not recommended for patients with untreated active gum disease, extensive missing tooth structure, or severe nocturnal teeth grinding (bruxism) without a protective nightguard. Severe bite misalignment is best treated first with orthodontics.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BENEFITS & CONSIDERATIONS -->
+        <section class="py-20 px-6 md:px-12 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-extrabold mb-10 text-center text-dark reveal">Benefits & Considerations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+                <!-- Benefits -->
+                <div class="bg-gradient-to-br from-[#F0FDFB] to-[#E2F7EF] p-8 rounded-3xl border border-teal-200/70 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 text-brand flex items-center gap-3">
+                        <i class="fas fa-check-circle text-brand text-2xl" aria-hidden="true"></i> Cosmetic Benefits
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Custom Shade & Contour:</strong> Hand-crafted to match your facial profile, complexion, and personal aesthetic goals.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Stain Resistance:</strong> Glazed porcelain surfaces resist stains from coffee, wine, and tea exceptionally well.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Natural Light Reflection:</strong> Translucent ceramic mimics the optical depth and vibrancy of real enamel.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Immediate Transformation:</strong> Drastically upgrades your smile in as few as 1 to 2 clinical sessions.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Considerations -->
+                <div class="bg-orange-50/60 p-8 rounded-3xl border border-orange-100">
+                    <h3 class="text-xl font-bold mb-6 text-accent flex items-center gap-3">
+                        <i class="fas fa-circle-exclamation text-accent text-2xl" aria-hidden="true"></i> Things to Consider
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Irreversible Preparation:</strong> Porcelain veneers require conservative enamel etching that cannot be reversed.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Avoid Biting Hard Objects:</strong> Never bite hard plastic, pen caps, bones, or ice with veneered front teeth.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Temporary Tooth Sensitivity:</strong> Mild hot/cold sensitivity may linger for a week while teeth adapt to bonding.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Future Replacement:</strong> Like all dental restorations, veneers will eventually require replacement after their lifespan.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. WHAT TO EXPECT -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-5xl mx-auto reveal">
+                <h2 class="text-3xl font-extrabold mb-10 text-center text-dark">What Happens During the Procedure?</h2>
+                <div class="space-y-6">
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Comprehensive Smile Design Consultation</h3>
+                            <p class="text-gray-600">We analyze your facial proportions, review your smile desires, and create diagnostic mockups to visualize proposed veneer dimensions.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Tooth Preparation & Digital Impressions</h3>
+                            <p class="text-gray-600">A micro-thin layer of enamel is shaped under local anesthesia. Accurate impressions are taken and sent to the dental ceramist, while temporary veneers are placed.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Try-in & Aesthetic Verification</h3>
+                            <p class="text-gray-600">When the laboratory delivers your custom porcelain shells, we verify color, fit, and marginal contour against your smile in the mirror before permanent bonding.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">4</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Permanent Resin Cementation</h3>
+                            <p class="text-gray-600">The veneers are chemically bonded using light-cured resin cements, creating a permanent, unified bond between natural tooth structure and ceramic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. AFTERCARE & RECOVERY -->
+        <section class="py-20 px-6 md:px-12 max-w-5xl mx-auto reveal">
+            <h2 class="text-3xl font-extrabold mb-6 text-dark">Aftercare & Protecting Your Veneers</h2>
+            <p class="text-gray-600 mb-8 text-lg">
+                Maximize the longevity and shine of your veneers by adopting these essential habits:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="p-6 bg-secondary rounded-2xl border border-blue-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand">Non-Abrasive Oral Care</h3>
+                    <p class="text-gray-600 text-sm">Brush twice daily with a non-abrasive gel toothpaste and soft toothbrush. Avoid harsh whitening pastes containing silica or baking soda that can dull composite luster.</p>
+                </div>
+                <div class="p-6 bg-secondary rounded-2xl border border-blue-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand">Wear a Protective Nightguard</h3>
+                    <p class="text-gray-600 text-sm">If you grind your teeth during sleep (bruxism), a custom nightguard prevents excessive shearing pressures that could chip or dislodge veneers.</p>
+                </div>
+            </div>
+            <div class="p-5 bg-red-50 rounded-2xl border border-red-200 text-red-900 text-sm flex items-start gap-3">
+                <i class="fas fa-triangle-exclamation text-red-500 text-lg mt-0.5" aria-hidden="true"></i>
+                <p>
+                    <strong>Chipped or Loose Veneer:</strong> If a veneer chips or debonds, keep the fragment safe in a clean container and do not use superglue. Contact our clinic immediately for clinical re-bonding.
+                </p>
+            </div>
+        </section>
+
+        <!-- 8. PRICING -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <h2 class="text-3xl font-extrabold mb-4 text-dark">Treatment Costs</h2>
+                <div class="bg-white p-8 md:p-10 rounded-3xl border border-gray-200 custom-shadow inline-block max-w-lg w-full mb-6">
+                    <p class="text-gray-500 uppercase tracking-widest text-xs font-bold mb-2">Cosmetic Veneer Restoration</p>
+                    <p class="text-4xl md:text-5xl font-extrabold text-brand mb-4">Starting at ₱3,500<span class="text-base text-gray-500 font-normal"> / tooth</span></p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Direct composite veneers start at ₱3,500 per tooth. Premium laboratory-fabricated porcelain ceramic veneers are priced based on the number of units and material specifications.
+                    </p>
+                    <a href="/#booking?service=veneers" class="bg-accent text-white px-8 py-3.5 rounded-full font-bold text-base hover:bg-orange-600 transition inline-block shadow-md">
+                        Book Veneer Consultation
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm max-w-xl mx-auto italic">
+                    Pricing varies depending on whether composite or porcelain material is chosen, number of teeth involved, and prerequisite gum contouring. A full cost breakdown will be provided after your consultation.
+                </p>
+            </div>
+        </section>
+
+        <!-- 9. FAQS -->
+        <section class="py-20 px-6 md:px-12 max-w-4xl mx-auto reveal">
+            <h2 class="text-3xl font-extrabold mb-12 text-center text-dark">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="ven-faq-1">
+                        <span class="font-bold text-dark">What is the difference between composite and porcelain veneers?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="ven-faq-1" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        Composite veneers are applied directly in a single visit at a lower cost, lasting 4 to 7 years. Porcelain veneers are lab-crafted ceramic shells that offer superior stain resistance, lifelike translucency, and longevity of 10 to 15+ years.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="ven-faq-2">
+                        <span class="font-bold text-dark">Can I get veneers if I have crooked teeth?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="ven-faq-2" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        Veneers can mask minor rotations and small gaps. However, for moderate to severe orthodontic crowding or bite misalignments, we recommend dental braces first to preserve natural enamel and achieve healthier long-term stability.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="ven-faq-3">
+                        <span class="font-bold text-dark">Is getting veneers painful?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="ven-faq-3" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        No. The preparation is performed under localized dental anesthesia to ensure complete comfort. For composite veneers, little to no enamel removal is often required, making the treatment completely painless.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="ven-faq-4">
+                        <span class="font-bold text-dark">Can veneers fall off?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="ven-faq-4" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        With modern adhesive dentistry, debonding is uncommon. It usually only happens if you bite extremely hard objects (like ice cubes or shellfish shells) or grind teeth heavily without a nightguard.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="ven-faq-5">
+                        <span class="font-bold text-dark">Do veneers ruin your natural teeth?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="ven-faq-5" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        When planned conservatively by an experienced cosmetic dentist, veneers do not ruin teeth. Only a tiny fraction of outer enamel (less than 1mm) is refined to ensure the veneer looks natural and doesn't appear bulky.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. RELATED SERVICES -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-extrabold mb-8 text-center text-dark">You May Also Be Interested In</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand text-3xl mb-4"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i></div>
+                            <h3 class="text-xl font-bold mb-2">Teeth Whitening</h3>
+                            <p class="text-gray-500 text-sm mb-4">Brighten adjacent teeth before veneer shade matching for a balanced, harmonious smile.</p>
+                            <p class="text-brand font-bold text-sm mb-4">Starting at ₱4,500</p>
+                        </div>
+                        <a href="/services/teeth-whitening/" class="text-accent font-bold text-sm hover:underline flex items-center gap-1">View Service <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand text-3xl mb-4"><i class="fas fa-teeth" aria-hidden="true"></i></div>
+                            <h3 class="text-xl font-bold mb-2">Dental Braces</h3>
+                            <p class="text-gray-500 text-sm mb-4">Orthodontic alignment for moderate to severe crowding prior to placing cosmetic veneers.</p>
+                            <p class="text-brand font-bold text-sm mb-4">₱5,000 Initial Down</p>
+                        </div>
+                        <a href="/services/dental-braces/" class="text-accent font-bold text-sm hover:underline flex items-center gap-1">View Service <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand text-3xl mb-4"><i class="fas fa-pump-soap" aria-hidden="true"></i></div>
+                            <h3 class="text-xl font-bold mb-2">Oral Prophylaxis</h3>
+                            <p class="text-gray-500 text-sm mb-4">Ensure healthy gums and plaque-free enamel before beginning cosmetic veneer bonding.</p>
+                            <p class="text-brand font-bold text-sm mb-4">Starting at ₱800</p>
+                        </div>
+                        <a href="/services/oral-prophylaxis/" class="text-accent font-bold text-sm hover:underline flex items-center gap-1">View Service <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. FINAL CTA BAND -->
+        <section class="bg-gradient-to-br from-[#093E3A] via-[#0F766E] to-[#115E59] py-16 px-6 text-white text-center shadow-xl border-y border-teal-400/20">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Ready to Transform Your Smile?</h2>
+                <p class="text-lg opacity-90 mb-8 max-w-xl mx-auto">Discover how dental veneers can elevate your smile at [Your Address]. Book your consultation today.</p>
+                <a href="/#booking?service=veneers" class="bg-[#FF6B35] text-[#0B2523] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#ff8252] transition shadow-xl inline-block min-h-[44px]">
+                    Book an Appointment
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-20 pb-10 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div>
+                <a href="/" class="flex items-center gap-2 mb-6">
+                    <div class="bg-brand text-white p-2 rounded-lg">
+                        <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight">[CLINIC NAME]</span>
+                </a>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    Cosmetic smile makeovers and dental veneers at [Your Address].
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://facebook.com/[PLACEHOLDER: clinic-facebook]" data-placeholder="configure-me" aria-label="Facebook page" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/[PLACEHOLDER: clinic-instagram]" data-placeholder="configure-me" aria-label="Instagram profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://tiktok.com/@[PLACEHOLDER: clinic-tiktok]" data-placeholder="configure-me" aria-label="TikTok profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="/services/" class="hover:text-white transition">All Dental Services</a></li>
+                    <li><a href="/#why-us" class="hover:text-white transition">Why Choose Us</a></li>
+                    <li><a href="/#promo" class="hover:text-white transition">Monthly Promos</a></li>
+                    <li><a href="/about/" class="hover:text-white transition">About Our Clinic</a></li>
+                    <li><a href="/privacy-policy/" data-placeholder="configure-me" class="hover:text-white transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Our Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="/services/teeth-whitening/" class="hover:text-white transition">Teeth Whitening</a></li>
+                    <li><a href="/services/dental-braces/" class="hover:text-white transition">Dental Braces</a></li>
+                    <li><a href="/services/tooth-extraction/" class="hover:text-white transition">Tooth Extraction</a></li>
+                    <li><a href="/services/root-canal/" class="hover:text-white transition">Root Canal Treatment</a></li>
+                    <li><a href="/services/dental-implants/" class="hover:text-white transition">Dental Implants</a></li>
+                    <li><a href="/services/veneers/" class="text-brand font-semibold">Dental Veneers</a></li>
+                    <li><a href="/services/pedia-dentistry/" class="hover:text-white transition">Pediatric Dentistry</a></li>
+                    <li><a href="/services/oral-prophylaxis/" class="hover:text-white transition">Oral Prophylaxis</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Stay Informed</h4>
+                <p class="text-gray-400 text-sm mb-4">Receive oral health tips and seasonal clinic announcements.</p>
+                <form onsubmit="event.preventDefault(); this.querySelector('p').classList.remove('hidden');" class="space-y-2">
+                    <div class="flex gap-2">
+                        <label for="ven-newsletter-email" class="sr-only">Your email</label>
+                        <input id="ven-newsletter-email" type="email" placeholder="Your email address" required class="bg-white/10 border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-brand w-full text-white">
+                        <button type="submit" aria-label="Subscribe" class="bg-brand px-4 py-3 rounded-lg hover:bg-blue-600 transition min-w-[44px] min-h-[44px] flex items-center justify-center"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+                    <p class="hidden text-xs text-green-400 font-semibold">Thank you for subscribing!</p>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-10 text-center text-gray-500 text-xs">
+            <p>© 2025 [CLINIC NAME]. All rights reserved. | Cosmetic Dental Services.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING CONTACTS -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-40 items-end">
+        <a href="/#booking?service=veneers" aria-label="Book appointment now" class="md:hidden flex items-center gap-2 bg-[#0F766E] text-white px-6 py-4 rounded-full font-bold shadow-2xl animate-bounce min-h-[44px]">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i> BOOK NOW
+        </a>
+        <a href="viber://chat?number=+639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on Viber" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#7360f2] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-viber" aria-hidden="true"></i>
+        </a>
+        <a href="https://wa.me/639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on WhatsApp" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#25D366] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <script>
+        // MOBILE MENU
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (menuBtn && menu) menuBtn.addEventListener('click', () => menu.classList.remove('translate-x-full'));
+        if (closeBtn && menu) closeBtn.addEventListener('click', () => menu.classList.add('translate-x-full'));
+        mobileLinks.forEach(link => link.addEventListener('click', () => { if (menu) menu.classList.add('translate-x-full'); }));
+
+        // REVEAL ANIMATIONS
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // FAQ ACCORDION
+        document.querySelectorAll('.faq-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', (!isExpanded).toString());
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>

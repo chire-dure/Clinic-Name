@@ -1,0 +1,6 @@
+{
+  "name": "BrightSmile Dental Mandaluyong",
+  "description": "Multi-page static website template for a dental clinic, featuring customizable services, online appointment booking, and comprehensive patient guides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

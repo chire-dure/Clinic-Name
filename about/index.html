@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & META -->
+    <title>About Us | Experienced Dentists | [CLINIC NAME]</title>
+    <meta name="description" content="Welcome to [CLINIC NAME]. Meet our 25+ experienced dentists, clinical directors, and compassionate dental care team at [Your Address]. Book your visit!">
+    <link rel="canonical" href="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/about/]">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Us | Experienced Dental Team | [CLINIC NAME]">
+    <meta property="og:description" content="Affordable, friendly, and accessible dental care at [Your Address]. Meet our team of dedicated dentists and partners.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/about/]">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Central Clinic Configuration -->
+    <script src="/clinic-config.js"></script>
+
+    <!-- External Assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#0F766E', // Seafoam Teal
+                            light: '#14B8A6',
+                            dark: '#0B524C',
+                        },
+                        seafoam: {
+                            50: '#F0FDFB',
+                            100: '#E1FBF6',
+                            200: '#C4F6EE',
+                            500: '#2DD4BF',
+                            700: '#0F766E',
+                            900: '#134E4A'
+                        },
+                        mint: {
+                            50: '#F2FCF8',
+                            100: '#E2F7EF',
+                            500: '#10B981'
+                        },
+                        secondary: '#F4FAF8',
+                        accent: '#FF6B35',
+                        dark: '#0B2523'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .custom-shadow { box-shadow: 0 10px 30px -5px rgba(15, 118, 110, 0.12); }
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+            .reveal.active { opacity: 1; transform: translateY(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-[#F4FAF8] overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" aria-label="Main navigation" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-white/95 backdrop-blur-md shadow-sm border-b border-teal-100/60">
+        <a href="/" class="flex items-center gap-2 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-1">
+            <div class="bg-gradient-to-br from-teal-500 to-[#0F766E] text-white p-2.5 rounded-xl group-hover:rotate-12 transition-transform shadow-md shadow-teal-900/10">
+                <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-brand">[CLINIC NAME] <span class="text-accent">[Your Address]</span></span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+            <a href="/about/" class="text-brand border-b-2 border-brand pb-1 font-bold">About Us</a>
+            <a href="/services/" class="hover:text-brand transition py-1 px-2 rounded">Services</a>
+            <a href="#booking" class="bg-[#0F766E] text-white px-6 py-3 rounded-full hover:bg-[#0B524C] transition shadow-md min-h-[44px] flex items-center justify-center font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F766E]">Book Appointment</a>
+        </div>
+
+        <button id="mobile-menu-btn" aria-label="Open mobile menu" class="md:hidden text-brand text-2xl p-2 min-w-[44px] min-h-[44px] flex items-center justify-center">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 text-2xl font-bold translate-x-full transition-transform duration-300">
+        <button id="close-menu" aria-label="Close mobile menu" class="absolute top-6 right-6 text-3xl text-brand p-2 min-w-[44px] min-h-[44px] flex items-center justify-center">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <a href="/" class="mobile-link hover:text-brand transition">Home</a>
+        <a href="/about/" class="mobile-link text-brand font-bold">About Us</a>
+        <a href="/services/" class="mobile-link hover:text-brand transition">Services</a>
+        <a href="#booking" class="mobile-link bg-[#0F766E] text-white px-8 py-4 rounded-full min-h-[44px] flex items-center justify-center font-bold">Book Now</a>
+    </div>
+
+    <main class="pt-24 pb-20">
+        <!-- 1. BREADCRUMBS -->
+        <div class="max-w-7xl mx-auto px-6 md:px-12 pt-6">
+            <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-gray-500 mb-6 font-medium">
+                <a href="/" class="hover:text-brand transition">Home</a>
+                <span class="text-gray-300">&gt;</span>
+                <span class="text-brand font-bold" aria-current="page">About Us</span>
+            </nav>
+        </div>
+
+        <!-- 2. ABOUT US HERO SECTION -->
+        <section class="bg-gradient-to-b from-[#E7F7F4] via-[#F2FAF8] to-white py-16 px-6 md:px-12 border-b border-teal-100/70">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-3/5 reveal">
+                    <span class="bg-teal-100/80 text-brand px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">
+                        Your Trusted Dental Family
+                    </span>
+                    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-dark">
+                        About <span class="text-brand">Us</span>
+                    </h1>
+                    <div class="space-y-4 text-gray-700 text-base md:text-lg leading-relaxed">
+                        <p>
+                            Welcome to <strong>[CLINIC NAME]</strong> – your go-to destination for convenient, friendly and affordable dental care. Our team of experienced dentists are here to provide you with high quality services at a price that won't break the bank.
+                        </p>
+                        <p>
+                            We understand how important it is for patients to have access to reliable dental care close by their homes, which is why we strive to make our clinics as accessible as possible. With flexible appointment times and competitive rates, you can rest assured knowing that your oral health needs are in good hands when visiting us!
+                        </p>
+                    </div>
+                    <div class="mt-8 flex flex-wrap items-center gap-4">
+                        <a href="#our-dentists" class="bg-[#14B8A6] text-[#0B2523] px-8 py-4 rounded-xl font-bold text-base hover:bg-teal-400 transition shadow-lg flex items-center gap-2 min-h-[44px]">
+                            <i class="fas fa-user-doctor"></i> Meet Our Expert Team
+                        </a>
+                        <a href="#booking" class="bg-[#0F766E] text-white px-8 py-4 rounded-xl font-bold text-base hover:bg-[#0B524C] transition shadow-lg flex items-center gap-2 min-h-[44px]">
+                            <i class="fas fa-calendar-check"></i> Book an Appointment
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:w-2/5 reveal">
+                    <div class="relative">
+                        <div class="w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gray-100">
+                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" 
+                                 alt="Comfortable modern dental treatment operatory room" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand text-white flex items-center justify-center text-xl font-extrabold">
+                                <i class="fas fa-heart-pulse"></i>
+                            </div>
+                            <div>
+                                <p class="text-xl font-extrabold text-brand">25+ Dentists</p>
+                                <p class="text-xs text-gray-500 font-medium">Ready to serve your family</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. OUR PHILOSOPHY & HUMAN MISSION MANIFESTO -->
+        <section class="py-20 px-6 md:px-12 bg-gradient-to-b from-white via-[#EDFAF6] to-white border-y border-teal-100/70 relative overflow-hidden">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <!-- Eyebrow Pill -->
+                <span class="bg-teal-100/80 text-brand px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block shadow-sm">
+                    Our Clinic Philosophy
+                </span>
+                
+                <!-- Main Catchy Title -->
+                <h2 class="text-3xl md:text-5xl font-extrabold text-dark tracking-tight leading-tight mb-8">
+                    A Human Dental Journey <br class="hidden sm:inline">
+                    <span class="text-brand">That Makes Genuine Sense</span>
+                </h2>
+
+                <!-- Manifesto Quote Body -->
+                <div class="space-y-6 text-gray-700 text-base md:text-lg leading-relaxed text-left sm:text-center max-w-3xl mx-auto">
+                    <p>
+                        Our practice is built on a simple, enduring conviction: <strong>healthcare should feel human, accommodating, and kind</strong>. We believe dental visits shouldn't be intimidating or transactional. Instead, we strive to cultivate a positive, welcoming environment where our patients feel genuinely listened to, and our clinical team is empowered to deliver their very best care.
+                    </p>
+                    <p>
+                        Our commitment to excellence means using only proven, certified bio-compatible materials and modern gentle techniques — ensuring every procedure meets your highest expectations without exceeding your family's budget. Because our clinic is centrally positioned at [Your Address], premier oral healthcare fits effortlessly into your busy week. Whether you require a routine preventive checkup, gentle pediatric care, or a full smile rehabilitation, we have you completely covered.
+                    </p>
+                    <p class="font-medium text-brand">
+                        Visit us today at [Your Address] and experience the difference of choosing a dental team that truly puts you first.
+                    </p>
+                </div>
+
+                <!-- Book an Appointment CTA Button -->
+                <div class="mt-8 flex justify-center">
+                    <a href="#booking" class="bg-[#0F766E] text-white px-9 py-4 rounded-full font-bold text-base hover:bg-[#0B524C] transition shadow-lg shadow-teal-900/15 inline-flex items-center gap-3 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F766E]">
+                        <span>Book an Appointment</span>
+                        <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <!-- Picture Under The Quote -->
+                <div class="mt-14 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gray-100 relative group">
+                    <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=1200" 
+                         alt="Welcoming modern dental clinic and team atmosphere" 
+                         class="w-full h-72 sm:h-96 md:h-[420px] object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/20 to-transparent flex items-end p-6 sm:p-10 text-left">
+                        <div class="text-white max-w-xl">
+                            <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-extrabold uppercase px-3 py-1 rounded-full mb-2 inline-block border border-white/20">
+                                [Your Address]
+                            </span>
+                            <h3 class="text-xl sm:text-2xl font-extrabold mb-1">Caring, Unhurried Dental Consultations</h3>
+                            <p class="text-xs sm:text-sm text-blue-100">Where modern dental precision meets authentic warmth and accessibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. WHY FAMILIES TRUST US -->
+        <section class="py-24 px-6 md:px-12 bg-gradient-to-b from-white via-[#F8FBFE] to-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16 reveal">
+                    <span class="text-brand text-xs font-bold uppercase tracking-widest bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-100 inline-block mb-3">Our Core Commitments</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-dark mb-4">
+                        Why Families Trust <span class="text-brand">[CLINIC NAME]</span>
+                    </h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto text-base">We combine strategic location, transparent payment terms, and clear bilingual care to deliver stress-free dental visits.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+                    <!-- Feature 1 -->
+                    <div class="bg-secondary p-8 rounded-3xl border border-blue-100 shadow-sm hover:shadow-md transition">
+                        <div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-blue-200">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Prime, Accessible Location</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Centrally located at [Your Address]. Easily accessible with convenient parking and transit options nearby!
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-blue-200/60 text-xs font-semibold text-brand flex items-center gap-1.5">
+                            <i class="fas fa-location-dot"></i> Conveniently Located at [Your Address]
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-secondary p-8 rounded-3xl border border-blue-100 shadow-sm hover:shadow-md transition">
+                        <div class="w-14 h-14 bg-accent text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-orange-200">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">Flexible Payment Plans</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            We accept GCash, Maya, cash, and major credit cards. 0% installment plans available for braces and implants.
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-blue-200/60 text-xs font-semibold text-accent flex items-center gap-1.5">
+                            <i class="fas fa-percent"></i> ₱5,000 Downpayment Available
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-secondary p-8 rounded-3xl border border-blue-100 shadow-sm hover:shadow-md transition">
+                        <div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-blue-200">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-dark">English & Filipino Speaking</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Clear communication is key. Our friendly staff explains each procedure and treatment option thoroughly in your preferred language.
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-blue-200/60 text-xs font-semibold text-brand flex items-center gap-1.5">
+                            <i class="fas fa-hand-holding-heart"></i> Warm, Compassionate Care
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modern Sterilized Equipment & Operatory Showcase -->
+                <div class="mt-16 bg-slate-900 text-white rounded-[2.5rem] p-8 md:p-14 shadow-2xl relative overflow-hidden reveal">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+                        <div class="lg:col-span-6 space-y-6">
+                            <span class="bg-brand/80 text-white px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                                Hospital-Grade Standards
+                            </span>
+                            <h3 class="text-3xl md:text-4xl font-extrabold leading-tight">
+                                Modern Sterilized Dental Clinic Equipment
+                            </h3>
+                            <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                                Your safety is non-negotiable. Every instrument undergoes a multi-stage autoclave sterilization process, sealed and unbagged only in full view of the patient.
+                            </p>
+                            
+                            <!-- Stats Counters -->
+                            <div class="grid grid-cols-2 gap-4 pt-2">
+                                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/15">
+                                    <p class="text-4xl font-extrabold text-accent">100%</p>
+                                    <p class="text-xs text-gray-300 font-semibold uppercase tracking-wider mt-1">Sterilized & Safe Care</p>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/15">
+                                    <p class="text-4xl font-extrabold text-white">10k+</p>
+                                    <p class="text-xs text-gray-300 font-semibold uppercase tracking-wider mt-1">Smiles Restored</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="rounded-2xl overflow-hidden h-52 bg-gray-800 border border-white/10">
+                                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=400" 
+                                     alt="Sterilized clinical equipment" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="rounded-2xl overflow-hidden h-52 bg-gray-800 border border-white/10">
+                                <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=400" 
+                                     alt="Comfortable dental treatment operatory room" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. MEET OUR EXPERT TEAM (OUR DENTISTS) -->
+        <section id="our-dentists" class="py-24 px-6 md:px-12 bg-gradient-to-b from-[#F2F7FC] via-[#EEF5FC] to-white border-t border-blue-100/70 scroll-mt-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 reveal">
+                    <span class="text-brand text-xs font-bold uppercase tracking-widest bg-blue-100 px-3.5 py-1.5 rounded-full inline-block mb-3">Our Clinical Faculty</span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-dark mb-4">Our Dentists</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto text-base">Meet our dedicated team of clinical directors, partner specialists, and full-time dentists committed to gentle care.</p>
+                </div>
+
+                <!-- Dentist Category Filter Pills -->
+                <div class="flex flex-wrap justify-center gap-2 mb-12 reveal" id="team-filter-buttons">
+                    <button type="button" class="team-filter-btn px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition bg-brand text-white shadow-sm" data-filter="all">
+                        All Dentists (25)
+                    </button>
+                    <button type="button" class="team-filter-btn px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition bg-white text-gray-700 hover:bg-gray-100 shadow-sm" data-filter="director-partner">
+                        Directors & Partners (6)
+                    </button>
+                    <button type="button" class="team-filter-btn px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition bg-white text-gray-700 hover:bg-gray-100 shadow-sm" data-filter="head-senior">
+                        Head & Senior Dentists (7)
+                    </button>
+                    <button type="button" class="team-filter-btn px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition bg-white text-gray-700 hover:bg-gray-100 shadow-sm" data-filter="fulltime">
+                        Full-Time Dentists (12)
+                    </button>
+                </div>
+
+                <!-- 25 Dentists Roster Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 reveal" id="dentists-grid">
+                    
+                    <!-- 1. Dr Grace -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border-2 border-brand/20 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="director-partner">
+                        <div>
+                            <div class="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-brand/30 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1594824813637-2309f44615a6?auto=format&fit=crop&q=80&w=400" alt="Dr Grace - Clinical Director" class="w-full h-full object-cover">
+                            </div>
+                            <span class="bg-accent text-white text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Clinical Director</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Grace</h3>
+                            <p class="text-xs text-brand font-semibold mb-3">Clinical Director</p>
+                            <p class="text-xs text-gray-500">Leading clinical governance, patient protocols, and treatment quality standards.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 2. Dr Miguel -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="director-partner">
+                        <div>
+                            <div class="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-blue-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400" alt="Dr Miguel - Partner Dentist" class="w-full h-full object-cover">
+                            </div>
+                            <span class="bg-blue-100 text-brand text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Partner</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Miguel</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Partner Dentist</p>
+                            <p class="text-xs text-gray-500">Specializes in restorative rehabilitation and comprehensive oral health.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 3. Dr Krystal -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="director-partner">
+                        <div>
+                            <div class="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-blue-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" alt="Dr Krystal - Partner Dentist" class="w-full h-full object-cover">
+                            </div>
+                            <span class="bg-blue-100 text-brand text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Partner</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Krystal</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Partner Dentist</p>
+                            <p class="text-xs text-gray-500">Dedicated to aesthetic cosmetic dentistry and smile design.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 4. Dr Miriam -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="director-partner">
+                        <div>
+                            <div class="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-blue-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=400" alt="Dr Miriam - Partner Dentist" class="w-full h-full object-cover">
+                            </div>
+                            <span class="bg-blue-100 text-brand text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Partner</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Miriam</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Partner Dentist</p>
+                            <p class="text-xs text-gray-500">Focuses on gentle periodontal health and preventive hygiene care.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 5. Dr Elenor -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="director-partner">
+                        <div>
+                            <div class="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-blue-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&q=80&w=400" alt="Dr Elenor - Partner Dentist" class="w-full h-full object-cover">
+                            </div>
+                            <span class="bg-blue-100 text-brand text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Partner</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Elenor</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Partner Dentist</p>
+                            <p class="text-xs text-gray-500">Orthodontic and functional occlusion diagnosis for teens and adults.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 6. Dr Judith -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="director-partner">
+                        <div>
+                            <div class="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-blue-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400" alt="Dr Judith - Partner Dentist" class="w-full h-full object-cover">
+                            </div>
+                            <span class="bg-blue-100 text-brand text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Partner</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Judith</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Partner Dentist</p>
+                            <p class="text-xs text-gray-500">Experienced in pediatric care and gentle family dentistry.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 7. Dr Pearl -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="head-senior">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Head Dentist</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Pearl</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Head Dentist</p>
+                            <p class="text-xs text-gray-500">Clinical leadership in general dentistry and preventive oral wellness.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 8. Dr Apple -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="head-senior">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-purple-100 text-purple-800 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Senior Dentist</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Apple</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Senior Dentist</p>
+                            <p class="text-xs text-gray-500">Expert in tooth restorations, veneers, and composite bonding.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 9. Dr Brenda -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="head-senior">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Head Dentist</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Brenda</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Head Dentist</p>
+                            <p class="text-xs text-gray-500">Comprehensive oral diagnosis and complex dental case management.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 10. Dr Ismael -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="head-senior">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Head Dentist</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Ismael</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Head Dentist</p>
+                            <p class="text-xs text-gray-500">Endodontic pain management and root canal treatments.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 11. Dr Nanette -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="head-senior">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-purple-100 text-purple-800 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Senior Dentist</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Nanette</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Senior Dentist</p>
+                            <p class="text-xs text-gray-500">Specializes in restorative crowns, bridges, and prosthodontics.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 12. Dr Jen -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="head-senior">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-purple-100 text-purple-800 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Senior Dentist</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Jen</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Senior Dentist</p>
+                            <p class="text-xs text-gray-500">Passionate about preventive prophylaxis and periodontal health.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 13. Dr Ruth -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Ruth</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">General dental care, checkups, and gentle cleanings.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 14. Dr Dandee -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Dandee</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">Patient-centered tooth fillings, cleanings, and emergency relief.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 15. Dr Leah -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Leah</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">Caring dental diagnostics and restorative fillings.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 16. Dr Ingrid -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Ingrid</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">Dedicated to pain-free extractions and preventive fluoride treatments.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 17. Dr Jennifer -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Jennifer</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">Comfort-first routine cleanings and whitening consultations.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 18. Dr Roselyn -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Roselyn</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">General dentistry, composite bonding, and patient education.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 19. Dr Donna -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Donna</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">Comprehensive checkups and gentle family dental wellness.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 20. Dr Maricel -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Maricel</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">Focused on pediatric care and gentle restorative dentistry.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 21. Dr Eugene -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Eugene</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">General dental care, tooth extractions, and oral health consultations.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 22. Dr Sharon -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Sharon</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">Gentle prophylaxis cleanings, fluoride treatments, and fillings.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 23. Dr Shahoney -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Shahoney</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">Compassionate clinical exams and preventative patient care.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 24. Dr Pauline -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="head-senior">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Junior Head Dentist</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Pauline</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Junior Head Dentist</p>
+                            <p class="text-xs text-gray-500">Supervises clinical workflows and general operatory procedures.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- 25. Dr Ferdinand -->
+                    <div class="dentist-card bg-white rounded-3xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-category="fulltime">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xl mb-4">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full mb-2 inline-block">Full - Time</span>
+                            <h3 class="text-xl font-extrabold text-dark mb-1">Dr Ferdinand</h3>
+                            <p class="text-xs text-gray-600 font-semibold mb-3">Full - Time Dentist</p>
+                            <p class="text-xs text-gray-500">General dental surgery, tooth restorations, and consultations.</p>
+                        </div>
+                        <a href="/#booking" class="mt-4 pt-3 border-t border-gray-100 text-xs font-bold text-brand hover:underline flex items-center justify-between">
+                            <span>Book Consultation</span> <i class="fas fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FINAL BOOKING INVITATION CTA -->
+        <section class="bg-brand py-16 px-6 text-white text-center">
+            <div class="max-w-4xl mx-auto reveal">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Ready to Meet Our Team?</h2>
+                <p class="text-lg opacity-90 mb-8 max-w-xl mx-auto">Schedule your consultation with our experienced dentists at [Your Address]. Flexible hours & gentle care.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#booking" class="bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-600 transition shadow-xl min-h-[44px] flex items-center justify-center">
+                        Book Your Visit Now
+                    </a>
+                    <a href="tel:+639171234567" data-placeholder="configure-me" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brand transition min-h-[44px] flex items-center justify-center">
+                        Call [PLACEHOLDER: Phone]
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. BOOKING SECTION -->
+        <section id="booking" class="py-24 px-6 md:px-12 bg-gradient-to-b from-white via-[#F8FBFE] to-white relative border-t border-blue-100/60">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-3/5 reveal">
+                    <span class="bg-blue-100 text-brand px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">
+                        Easy Online Scheduling
+                    </span>
+                    <h2 class="text-4xl font-extrabold mb-4">Book Your Appointment Today</h2>
+                    <p class="text-gray-500 mb-10">We respond promptly during clinic hours. Schedule your visit with our dedicated dental team.</p>
+                    
+                    <!-- ⚠️ FLAG: Web3Forms access key is publicly visible. Rotate key at https://web3forms.com after deployment. -->
+                    <form id="appointment-form" class="space-y-6" novalidate>
+                        <input type="hidden" name="access_key" value="e44fd7c5-5ac5-4a79-8327-fbfea3968ef7">
+                        <input type="hidden" name="subject" value="New Dental Appointment Request - [CLINIC NAME]">
+                        <input type="hidden" name="from_name" value="[CLINIC NAME] Website (About Page)">
+                        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="appointment-name" class="block text-sm font-bold mb-2">Full Name *</label>
+                                <input type="text" name="name" id="appointment-name" aria-label="Full Name" required placeholder="Juana Dela Cruz" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand focus-visible:ring-2 focus-visible:ring-brand">
+                            </div>
+                            <div>
+                                <label for="appointment-phone" class="block text-sm font-bold mb-2">Phone Number * (09XX XXX XXXX)</label>
+                                <input type="tel" name="phone" id="appointment-phone" aria-label="Phone Number" required placeholder="0917 123 4567" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand focus-visible:ring-2 focus-visible:ring-brand">
+                                <p id="phone-validation-error" class="hidden text-red-500 text-xs mt-1 font-semibold">Please enter a valid 11-digit Philippine mobile number starting with 09 (e.g., 0917 123 4567).</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="appointment-service" class="block text-sm font-bold mb-2">Service Interested In</label>
+                                <select name="service" id="appointment-service" aria-label="Select dental service" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-brand focus-visible:ring-2 focus-visible:ring-brand">
+                                    <option value="Teeth Whitening">Teeth Whitening</option>
+                                    <option value="Dental Braces">Dental Braces</option>
+                                    <option value="Extraction">Tooth Extraction</option>
+                                    <option value="Root Canal">Root Canal</option>
+                                    <option value="Implants">Dental Implants</option>
+                                    <option value="Veneers">Veneers</option>
+                                    <option value="Cleaning">Oral Prophylaxis (Cleaning)</option>
+                                    <option value="Pedia Checkup">Pedia Checkup</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="appointment-date" class="block text-sm font-bold mb-2">Preferred Date</label>
+                                <input type="date" name="preferred_date" id="appointment-date" aria-label="Preferred appointment date" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-brand focus-visible:ring-2 focus-visible:ring-brand">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <span class="block text-sm font-bold mb-3">Preferred Time</span>
+                                <div class="flex flex-wrap gap-3">
+                                    <label class="flex items-center gap-2 cursor-pointer bg-gray-50 px-4 py-3 rounded-xl border border-gray-200 hover:border-brand transition text-sm">
+                                        <input type="radio" name="time" value="morning" checked class="accent-brand"> Morning
+                                    </label>
+                                    <label class="flex items-center gap-2 cursor-pointer bg-gray-50 px-4 py-3 rounded-xl border border-gray-200 hover:border-brand transition text-sm">
+                                        <input type="radio" name="time" value="afternoon" class="accent-brand"> Afternoon
+                                    </label>
+                                    <label class="flex items-center gap-2 cursor-pointer bg-gray-50 px-4 py-3 rounded-xl border border-gray-200 hover:border-brand transition text-sm">
+                                        <input type="radio" name="time" value="evening" class="accent-brand"> Evening
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="appointment-referral" class="block text-sm font-bold mb-2">How did you hear about us? (Optional)</label>
+                                <select name="referral_source" id="appointment-referral" aria-label="How did you hear about us" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-brand focus-visible:ring-2 focus-visible:ring-brand">
+                                    <option value="">Select an option</option>
+                                    <option value="Google Search / Maps">Google Search / Maps</option>
+                                    <option value="Facebook / Instagram">Facebook / Instagram</option>
+                                    <option value="TikTok">TikTok</option>
+                                    <option value="Friend or Family Referral">Friend or Family Referral</option>
+                                    <option value="Walk-in / Living Nearby">Walk-in / Living Nearby</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="appointment-concerns" class="block text-sm font-bold mb-2">Any specific concerns?</label>
+                            <textarea name="concerns" id="appointment-concerns" rows="4" aria-label="Specific dental concerns or medical history" placeholder="Tell us about your dental goals, questions, or any dental fears..." class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-brand focus-visible:ring-2 focus-visible:ring-brand"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-[#0F766E] text-white py-5 rounded-2xl font-bold text-xl shadow-xl shadow-teal-900/15 hover:bg-[#0B524C] transition flex items-center justify-center gap-3 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F766E]">
+                            Request My Appointment <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                        </button>
+                        <p id="success-msg" role="status" aria-live="polite" class="hidden text-green-600 font-bold text-center p-4 bg-green-50 rounded-xl border border-green-200">✓ Your appointment request was sent successfully! Our dental team will contact you shortly to confirm.</p>
+                        <p id="error-msg" role="alert" aria-live="assertive" class="hidden text-red-600 font-bold text-center p-4 bg-red-50 rounded-xl border border-red-200">Sorry, we couldn't send your request. Please check your phone number or reach us directly via Viber/Call.</p>
+                    </form>
+                </div>
+
+                <div class="lg:w-2/5 reveal">
+                    <div class="bg-gradient-to-br from-[#EAF8F5] to-[#DEF3EF] border border-teal-200/70 p-8 rounded-[2rem] h-full flex flex-col justify-between shadow-sm">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-8 text-[#0F766E]">Clinic Information</h3>
+                            <div class="space-y-6 mb-8">
+                                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="flex gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded p-1">
+                                    <div class="text-[#0F766E] text-xl group-hover:scale-110 transition"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                                    <div>
+                                        <p class="font-bold">Visit Us</p>
+                                        <p class="text-gray-500 text-sm">[PLACEHOLDER: [Your Address]]</p>
+                                    </div>
+                                </a>
+                                <a href="tel:+639171234567" data-placeholder="configure-me" class="flex gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded p-1">
+                                    <div class="text-[#0F766E] text-xl group-hover:scale-110 transition"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
+                                    <div>
+                                        <p class="font-bold">Call Us</p>
+                                        <p class="text-gray-500 text-sm">[PLACEHOLDER: 0917-123-4567 / (02) 888-BRIGHT]</p>
+                                    </div>
+                                </a>
+                                <div class="flex gap-4">
+                                    <div class="text-[#0F766E] text-xl"><i class="fas fa-clock" aria-hidden="true"></i></div>
+                                    <div>
+                                        <p class="font-bold">Clinic Hours</p>
+                                        <p class="text-gray-500 text-sm">Mon–Sat: 9:00 AM – 6:00 PM</p>
+                                        <p class="text-gray-500 text-sm">Sun: By Appointment Only</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Google Maps Embed -->
+                            <div class="rounded-2xl overflow-hidden h-64 shadow-inner mb-6">
+                                <iframe title="Clinic Google Maps Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.341101968877!2d121.0475!3d14.5768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM0JzM2LjUiTiAxMjHCsDAyJzUxLjAiRQ!5e0!3m2!1sen!2sph!4v1625000000000!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- Viber button: [PLACEHOLDER: replace with real Viber number] -->
+                        <a href="viber://chat?number=+639171234567" data-placeholder="configure-me" class="flex items-center justify-center gap-3 bg-[#7360f2] text-white p-4 rounded-xl font-bold hover:opacity-90 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7360f2]">
+                            <i class="fab fa-viber text-2xl" aria-hidden="true"></i> Message us on Viber
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-20 pb-10 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div>
+                <a href="/" class="flex items-center gap-2 mb-6">
+                    <div class="bg-brand text-white p-2 rounded-lg">
+                        <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight">[CLINIC NAME]</span>
+                </a>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    Convenient, friendly, and affordable dental care at [Your Address].
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://facebook.com/[PLACEHOLDER: clinic-facebook]" data-placeholder="configure-me" aria-label="Facebook page" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/[PLACEHOLDER: clinic-instagram]" data-placeholder="configure-me" aria-label="Instagram profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://tiktok.com/@[PLACEHOLDER: clinic-tiktok]" data-placeholder="configure-me" aria-label="TikTok profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="/about/" class="text-brand font-semibold">About Our Clinic</a></li>
+                    <li><a href="/services/" class="hover:text-white transition">All Dental Services</a></li>
+                    <li><a href="/#why-us" class="hover:text-white transition">Why Choose Our Clinic</a></li>
+                    <li><a href="/#promo" class="hover:text-white transition">Clinic Promotions</a></li>
+                    <li><a href="/privacy-policy/" data-placeholder="configure-me" class="hover:text-white transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Our Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="/services/teeth-whitening/" class="hover:text-white transition">Teeth Whitening</a></li>
+                    <li><a href="/services/dental-braces/" class="hover:text-white transition">Dental Braces</a></li>
+                    <li><a href="/services/tooth-extraction/" class="hover:text-white transition">Tooth Extraction</a></li>
+                    <li><a href="/services/root-canal/" class="hover:text-white transition">Root Canal Treatment</a></li>
+                    <li><a href="/services/dental-implants/" class="hover:text-white transition">Dental Implants</a></li>
+                    <li><a href="/services/veneers/" class="hover:text-white transition">Dental Veneers</a></li>
+                    <li><a href="/services/pedia-dentistry/" class="hover:text-white transition">Pediatric Dentistry</a></li>
+                    <li><a href="/services/oral-prophylaxis/" class="hover:text-white transition">Oral Prophylaxis</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Stay Informed</h4>
+                <p class="text-gray-400 text-sm mb-4">Receive oral health tips and seasonal clinic announcements.</p>
+                <form onsubmit="event.preventDefault(); this.querySelector('p').classList.remove('hidden');" class="space-y-2">
+                    <div class="flex gap-2">
+                        <label for="about-newsletter-email" class="sr-only">Your email</label>
+                        <input id="about-newsletter-email" type="email" placeholder="Your email address" required class="bg-white/10 border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-brand w-full text-white">
+                        <button type="submit" aria-label="Subscribe" class="bg-brand px-4 py-3 rounded-lg hover:bg-blue-600 transition min-w-[44px] min-h-[44px] flex items-center justify-center"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+                    <p class="hidden text-xs text-green-400 font-semibold">Thank you for subscribing!</p>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-10 text-center text-gray-500 text-xs">
+            <p>© 2025 [CLINIC NAME]. All rights reserved. | Experienced Team of 25+ Dentists.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING CONTACTS -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-40 items-end">
+        <a href="#booking" aria-label="Book appointment now" class="md:hidden flex items-center gap-2 bg-[#0F766E] text-white px-6 py-4 rounded-full font-bold shadow-2xl animate-bounce min-h-[44px]">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i> BOOK NOW
+        </a>
+        <a href="viber://chat?number=+639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on Viber" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#7360f2] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-viber" aria-hidden="true"></i>
+        </a>
+        <a href="https://wa.me/639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on WhatsApp" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#25D366] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <script>
+        // MOBILE MENU
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (menuBtn && menu) menuBtn.addEventListener('click', () => menu.classList.remove('translate-x-full'));
+        if (closeBtn && menu) closeBtn.addEventListener('click', () => menu.classList.add('translate-x-full'));
+        mobileLinks.forEach(link => link.addEventListener('click', () => { if (menu) menu.classList.add('translate-x-full'); }));
+
+        // REVEAL ANIMATIONS
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // TEAM FILTERING LOGIC
+        const filterBtns = document.querySelectorAll('.team-filter-btn');
+        const dentistCards = document.querySelectorAll('.dentist-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+
+                // Update active tab style
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brand', 'text-white');
+                    b.classList.add('bg-white', 'text-gray-700', 'hover:bg-gray-100');
+                });
+                btn.classList.add('bg-brand', 'text-white');
+                btn.classList.remove('bg-white', 'text-gray-700', 'hover:bg-gray-100');
+
+                // Show/hide cards
+                dentistCards.forEach(card => {
+                    const cat = card.getAttribute('data-category');
+                    if (filter === 'all' || cat === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // PREVENT PAST DATES ON APPOINTMENT FORM
+        const dateInput = document.getElementById('appointment-date');
+        if (dateInput) {
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+        }
+
+        // PHILIPPINES PHONE NUMBER VALIDATION HELPER
+        function validatePhilippinePhone(phone) {
+            const cleaned = phone.replace(/\D/g, '');
+            return /^09\d{9}$/.test(cleaned);
+        }
+
+        // APPOINTMENT FORM SUBMISSION VIA WEB3FORMS
+        const form = document.getElementById('appointment-form');
+        const phoneInput = document.getElementById('appointment-phone');
+        const phoneError = document.getElementById('phone-validation-error');
+        const successMsg = document.getElementById('success-msg');
+        const errorMsg = document.getElementById('error-msg');
+
+        if (form) {
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalButtonHTML = submitButton.innerHTML;
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                successMsg.classList.add('hidden');
+                errorMsg.classList.add('hidden');
+                if (phoneError) phoneError.classList.add('hidden');
+
+                // Client-side flexible phone validation
+                if (!validatePhilippinePhone(phoneInput.value)) {
+                    if (phoneError) phoneError.classList.remove('hidden');
+                    phoneInput.focus();
+                    return;
+                }
+
+                submitButton.disabled = true;
+                submitButton.innerText = 'Sending Request...';
+
+                try {
+                    const formData = new FormData(form);
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify(Object.fromEntries(formData))
+                    });
+                    const result = await response.json();
+
+                    if (response.ok && result.success === true) {
+                        form.reset();
+                        successMsg.classList.remove('hidden');
+                        successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    } else {
+                        console.error('Web3Forms submission failed:', result);
+                        errorMsg.textContent = 'Sorry, we couldn’t send your request: ' + (result.message || result.body?.message || 'Please try again or call the clinic directly.');
+                        errorMsg.classList.remove('hidden');
+                    }
+                } catch (error) {
+                    console.error('Appointment form request failed:', error);
+                    errorMsg.textContent = 'Connection error. Please check your internet connection or call our clinic directly.';
+                    errorMsg.classList.remove('hidden');
+                } finally {
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = originalButtonHTML;
+                }
+            });
+        }
+    </script>
+</body>
+</html>

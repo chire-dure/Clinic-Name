@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & META -->
+    <title>Dental Implants | [CLINIC NAME] [Your Address]</title>
+    <meta name="description" content="Permanent titanium dental implants at [Your Address]. Restore chewing strength and natural smile aesthetics. Book your consultation today!">
+    <link rel="canonical" href="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/dental-implants/]">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dental Implants | [CLINIC NAME] [Your Address]">
+    <meta property="og:description" content="Permanent tooth replacement that looks, feels, and bites like natural teeth. Advanced implant dentistry at [Your Address].">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/dental-implants/]">
+    <meta property="og:image" content="[PLACEHOLDER: https://www.yourdentalclinicdomain.com/images/og-implants.jpg]">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/]"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/]"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dental Implants",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/dental-implants/]"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Central Clinic Configuration -->
+    <script src="/clinic-config.js"></script>
+
+    <!-- External Assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#0F766E', // Seafoam Teal
+                            light: '#14B8A6',
+                            dark: '#0B524C',
+                        },
+                        seafoam: {
+                            50: '#F0FDFB',
+                            100: '#E1FBF6',
+                            200: '#C4F6EE',
+                            500: '#2DD4BF',
+                            700: '#0F766E',
+                            900: '#134E4A'
+                        },
+                        mint: {
+                            50: '#F2FCF8',
+                            100: '#E2F7EF',
+                            500: '#10B981'
+                        },
+                        secondary: '#F4FAF8',
+                        accent: '#FF6B35',
+                        dark: '#0B2523'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .custom-shadow { box-shadow: 0 10px 30px -5px rgba(15, 118, 110, 0.12); }
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+            .reveal.active { opacity: 1; transform: translateY(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+    </style>
+</head>
+<body class="font-sans text-[#0B2523] bg-[#F4FAF8] overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" aria-label="Main navigation" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-white/95 backdrop-blur-md shadow-sm border-b border-teal-100/60">
+        <a href="/" class="flex items-center gap-2 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-1">
+            <div class="bg-gradient-to-br from-teal-500 to-[#0F766E] text-white p-2.5 rounded-xl group-hover:rotate-12 transition-transform shadow-md shadow-teal-900/10">
+                <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-brand">[CLINIC NAME] <span class="text-accent">[Your Address]</span></span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+            <a href="/about/" class="hover:text-brand transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand py-1 px-2 rounded">About Us</a>
+            <a href="/services/" class="text-brand border-b-2 border-brand pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded font-bold">Services</a>
+            <a href="/#booking" class="bg-[#0F766E] text-white px-6 py-3 rounded-full hover:bg-[#0B524C] transition shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F766E] min-h-[44px] flex items-center justify-center font-bold">Book Appointment</a>
+        </div>
+
+        <button id="mobile-menu-btn" aria-label="Open mobile menu" class="md:hidden text-brand text-2xl p-2 min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 text-2xl font-bold translate-x-full transition-transform duration-300">
+        <button id="close-menu" aria-label="Close mobile menu" class="absolute top-6 right-6 text-3xl text-brand p-2 min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <a href="/" class="mobile-link hover:text-brand transition">Home</a>
+        <a href="/about/" class="mobile-link hover:text-brand transition">About Us</a>
+        <a href="/services/" class="mobile-link text-brand font-bold">Services</a>
+        <a href="/#booking" class="bg-[#0F766E] text-white px-8 py-4 rounded-full min-h-[44px] flex items-center justify-center font-bold">Book Now</a>
+    </div>
+
+    <main class="pt-24 pb-20">
+        <!-- 1. BREADCRUMBS -->
+        <div class="max-w-7xl mx-auto px-6 md:px-12 pt-6">
+            <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-gray-500 mb-6 font-medium">
+                <a href="/" class="hover:text-brand transition">Home</a>
+                <span class="text-gray-300">/</span>
+                <a href="/services/" class="hover:text-brand transition">Services</a>
+                <span class="text-gray-300">/</span>
+                <span class="text-brand font-bold" aria-current="page">Dental Implants</span>
+            </nav>
+        </div>
+
+        <!-- 2. SERVICE HERO -->
+        <section class="relative bg-gradient-to-b from-[#E7F7F4] via-[#F2FAF8] to-white py-16 px-6 md:px-12 border-b border-teal-100/70 overflow-hidden">
+            <!-- Ambient Glow -->
+            <div class="absolute -top-24 right-0 w-[500px] h-[500px] bg-teal-200/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+            <div class="absolute top-1/2 -left-20 w-[350px] h-[350px] bg-emerald-200/25 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+                <div class="md:w-1/2 reveal">
+                    <span class="bg-teal-100/90 text-[#0F766E] border border-teal-200/70 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block shadow-sm">
+                        Implantology at [Your Address]
+                    </span>
+                    <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
+                        Permanent <span class="text-[#0F766E]">Dental Implants</span> in [Your Address]
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Replace missing teeth with biocompatible titanium fixtures engineered to fuse naturally with your jawbone. Regain strong biting power, preserve facial bone structure, and smile with confidence.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/#booking?service=dental-implants" class="bg-[#0F766E] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0B524C] transition shadow-lg shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Inquire for Implant Consultation
+                        </a>
+                        <a href="tel:+639171234567" data-placeholder="configure-me" class="border-2 border-[#0F766E] text-[#0F766E] px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0F766E] hover:text-white transition min-h-[44px] flex items-center justify-center">
+                            Call [PLACEHOLDER: Phone]
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 reveal">
+                    <!-- High-Fidelity Operatory Hero Card -->
+                    <div class="w-full aspect-video md:aspect-[4/3] rounded-3xl bg-gradient-to-br from-[#093E3A] via-[#0F766E] to-[#115E59] flex flex-col items-center justify-center text-white p-8 text-center shadow-2xl border border-teal-400/20 relative overflow-hidden group">
+                        <div class="absolute -top-12 -right-12 w-44 h-44 bg-accent/25 rounded-full blur-xl pointer-events-none"></div>
+                        <div class="relative z-10">
+                            <div class="w-20 h-20 bg-white/15 backdrop-blur-md rounded-2xl flex items-center justify-center mx-auto mb-4 border border-white/20 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-fill-drip text-4xl text-white/95" aria-hidden="true"></i>
+                            </div>
+                            <p class="text-2xl font-bold">Implant Restorative Center</p>
+                            <p class="text-teal-100 text-sm mt-2 max-w-sm">Titanium osseointegrated posts and custom zirconia/porcelain crowns</p>
+                            <span class="inline-block mt-4 bg-[#FF6B35] text-[#0B2523] text-xs font-extrabold uppercase px-4 py-1.5 rounded-full shadow-sm">0% Installments Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. OVERVIEW -->
+        <section class="py-20 px-6 md:px-12 max-w-5xl mx-auto reveal">
+            <h2 class="text-3xl font-extrabold mb-6 text-dark">What are Dental Implants?</h2>
+            <div class="space-y-5 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    A dental implant is an artificial tooth root surgically placed directly into the alveolar jawbone to support a replacement tooth crown, bridge, or stabilized denture. Made from medical-grade biocompatible titanium, the implant undergoes a natural biological bonding process called osseointegration, during which living bone cells lock securely into the microscopic pores of the titanium post.
+                </p>
+                <p>
+                    Traditional removable dentures and bridges only replace the visible portion of teeth above the gumline. Without a root stimulating the jawbone underneath, the surrounding bone gradually shrinks (resorption), causing neighboring teeth to shift and facial contours to appear prematurely aged.
+                </p>
+                <p>
+                    Dental implants provide true root replacement, delivering chewing power indistinguishable from healthy natural teeth and protecting long-term alveolar bone volume.
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. WHO IS IT FOR? -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-5xl mx-auto reveal">
+                <h2 class="text-3xl font-extrabold mb-6 text-dark">Are You a Good Candidate for Dental Implants?</h2>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Implant treatment requires healthy systemic conditions and adequate physical foundation. Ideal candidates include:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Missing One or More Teeth:</strong> Seeking a permanent solution that does not require grinding down neighboring healthy teeth.</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Adequate Bone Volume:</strong> Sufficient jawbone height and width to firmly anchor the titanium fixture, or readiness for bone grafting.</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Healthy Oral Mucosa:</strong> Free from active periodontal disease, chronic gingivitis, or untreated oral infections.</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Stable General Health:</strong> Non-smokers or controlled systemic health (e.g., well-managed blood pressure and diabetes).</p>
+                    </div>
+                </div>
+                <div class="p-5 bg-amber-50 rounded-2xl border border-amber-200 text-amber-900 text-sm flex items-start gap-3">
+                    <i class="fas fa-triangle-exclamation text-amber-600 text-lg mt-0.5" aria-hidden="true"></i>
+                    <p>
+                        <strong>Clinical Suitability Assessment:</strong> Implant success depends on comprehensive pre-surgical evaluation, including digital 3D CBCT scans. No dentist can guarantee 100% osseointegration, but clinical success rates internationally exceed 95% when rigorous protocols are followed.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BENEFITS & CONSIDERATIONS -->
+        <section class="py-20 px-6 md:px-12 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-extrabold mb-10 text-center text-dark reveal">Benefits & Considerations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+                <!-- Benefits -->
+                <div class="bg-gradient-to-br from-[#F0FDFB] to-[#E2F7EF] p-8 rounded-3xl border border-teal-200/70 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 text-brand flex items-center gap-3">
+                        <i class="fas fa-check-circle text-brand text-2xl" aria-hidden="true"></i> Key Benefits
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Lifelike Function & Appearance:</strong> Feels and chews just like a natural tooth, restoring full dietary enjoyment.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Preserves Neighboring Teeth:</strong> Unlike conventional bridges, adjacent teeth remain untouched with no enamel reduction.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Prevents Jawbone Shrinkage:</strong> Transmits chewing forces into the bone, stimulating bone density and facial fullness.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Long-Term Durability:</strong> With proper hygiene, implant fixtures can last for decades or a lifetime.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Considerations -->
+                <div class="bg-orange-50/60 p-8 rounded-3xl border border-orange-100">
+                    <h3 class="text-xl font-bold mb-6 text-accent flex items-center gap-3">
+                        <i class="fas fa-circle-exclamation text-accent text-2xl" aria-hidden="true"></i> Considerations
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Healing Timeline:</strong> Osseointegration requires an undisturbed healing period of 3 to 6 months before loading the permanent crown.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Surgical Procedure:</strong> Requires minor oral surgery under local anesthesia with slight post-op soreness and swelling.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Higher Initial Investment:</strong> Higher upfront cost than acrylic dentures, balanced by unmatched durability.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Smoking Risks:</strong> Tobacco use significantly increases risks of peri-implantitis and bone integration failure.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. WHAT TO EXPECT -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-5xl mx-auto reveal">
+                <h2 class="text-3xl font-extrabold mb-10 text-center text-dark">The 4 Treatment Stages</h2>
+                <div class="space-y-6">
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">3D Radiographic Planning & Assessment</h3>
+                            <p class="text-gray-600">The dentist performs a clinical exam and analyzes 3D scans to measure bone density, nerve pathways, and select the optimal implant dimension.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Implant Fixture Placement</h3>
+                            <p class="text-gray-600">Under local anesthesia, a minor gum incision is made, and the titanium post is inserted into the bone. A healing cap or temporary tooth protects the site.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Osseointegration (Healing Period)</h3>
+                            <p class="text-gray-600">Over 3 to 6 months, natural bone remodeling integrates with the titanium surface, forming a rigid, permanent biological foundation.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">4</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Abutment & Custom Crown Delivery</h3>
+                            <p class="text-gray-600">An abutment connector is attached to the implant, and a custom-shaded ceramic or zirconia crown is securely fitted to complete your smile.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. AFTERCARE & RECOVERY -->
+        <section class="py-20 px-6 md:px-12 max-w-5xl mx-auto reveal">
+            <h2 class="text-3xl font-extrabold mb-6 text-dark">Implant Care & Lifelong Maintenance</h2>
+            <p class="text-gray-600 mb-8 text-lg">
+                While titanium cannot get cavities, the surrounding gum tissue can suffer from peri-implantitis if bacteria accumulate. Protect your investment with these practices:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="p-6 bg-secondary rounded-2xl border border-blue-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand">Daily Interdental Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Floss daily around the implant abutment using implant-specific floss or a water flosser to dislodge biofilm from the gum cuff.</p>
+                </div>
+                <div class="p-6 bg-secondary rounded-2xl border border-blue-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand">Routine 6-Month Recalls</h3>
+                    <p class="text-gray-600 text-sm">Visit our clinic at [Your Address] every six months for specialized maintenance, where we verify screw torque, bone levels, and perform ultrasonic hygiene.</p>
+                </div>
+            </div>
+            <div class="p-5 bg-red-50 rounded-2xl border border-red-200 text-red-900 text-sm flex items-start gap-3">
+                <i class="fas fa-triangle-exclamation text-red-500 text-lg mt-0.5" aria-hidden="true"></i>
+                <p>
+                    <strong>Medical Precaution:</strong> If you experience persistent mobility of the implant post, sudden bleeding around the gumline, or severe throbbing pain weeks after surgery, contact our clinic immediately for examination.
+                </p>
+            </div>
+        </section>
+
+        <!-- 8. PRICING -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <h2 class="text-3xl font-extrabold mb-4 text-dark">Treatment Costs</h2>
+                <div class="bg-white p-8 md:p-10 rounded-3xl border border-gray-200 custom-shadow inline-block max-w-lg w-full mb-6">
+                    <p class="text-gray-500 uppercase tracking-widest text-xs font-bold mb-2">Permanent Tooth Replacement</p>
+                    <p class="text-3xl md:text-4xl font-extrabold text-brand mb-4">Inquire for Pricing</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Includes personalized surgical planning, premium titanium implant fixture, customized abutment, and lifelike porcelain or zirconia crown.
+                    </p>
+                    <a href="/#booking?service=dental-implants" class="bg-accent text-white px-8 py-3.5 rounded-full font-bold text-base hover:bg-orange-600 transition inline-block shadow-md">
+                        Inquire at Consultation
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm max-w-xl mx-auto italic">
+                    Pricing varies depending on your individual treatment needs, whether bone grafting or sinus lifting is required, and the specific implant system selected. A full cost breakdown will be provided after your consultation.
+                </p>
+            </div>
+        </section>
+
+        <!-- 9. FAQS -->
+        <section class="py-20 px-6 md:px-12 max-w-4xl mx-auto reveal">
+            <h2 class="text-3xl font-extrabold mb-12 text-center text-dark">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="imp-faq-1">
+                        <span class="font-bold text-dark">Does getting a dental implant hurt?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="imp-faq-1" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        The surgical placement is performed under profound local anesthesia, meaning you will not feel pain during the procedure. Most patients report that recovery involves less discomfort than having a molar extracted.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="imp-faq-2">
+                        <span class="font-bold text-dark">What happens if I don't have enough jawbone?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="imp-faq-2" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        If teeth have been missing for years and bone has resorbed, bone grafting or sinus augmentation can rebuild bone height and width, creating a solid base before or during implant placement.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="imp-faq-3">
+                        <span class="font-bold text-dark">How long do dental implants last?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="imp-faq-3" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        Titanium dental implants are considered the longest-lasting tooth replacement available. With diligent daily flossing, good oral hygiene, and routine checkups, implants can function smoothly for 25+ years or a lifetime.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="imp-faq-4">
+                        <span class="font-bold text-dark">Are dental implants better than bridges?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="imp-faq-4" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        Yes, in most cases. Dental bridges require permanently grinding down two adjacent healthy virgin teeth to support the bridge span. Implants stand independently, preserving neighboring teeth intact and stimulating bone health.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="imp-faq-5">
+                        <span class="font-bold text-dark">Can I pay in installment plans?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="imp-faq-5" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        Because implant treatment is naturally staged across surgical placement (phase 1) and crown fitting (phase 2), payments are spread across your treatment months. We also offer 0% credit card installment options.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. RELATED SERVICES -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-extrabold mb-8 text-center text-dark">You May Also Be Interested In</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand text-3xl mb-4"><i class="fas fa-tooth" aria-hidden="true"></i></div>
+                            <h3 class="text-xl font-bold mb-2">Tooth Extraction</h3>
+                            <p class="text-gray-500 text-sm mb-4">Gentle removal of severely broken teeth to prepare the foundation for implant restoration.</p>
+                            <p class="text-brand font-bold text-sm mb-4">Starting at ₱800</p>
+                        </div>
+                        <a href="/services/tooth-extraction/" class="text-accent font-bold text-sm hover:underline flex items-center gap-1">View Service <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand text-3xl mb-4"><i class="fas fa-sparkles" aria-hidden="true"></i></div>
+                            <h3 class="text-xl font-bold mb-2">Dental Veneers</h3>
+                            <p class="text-gray-500 text-sm mb-4">Cosmetic porcelain restorations to enhance the color and shape of your front teeth.</p>
+                            <p class="text-brand font-bold text-sm mb-4">Starting at ₱3,500/tooth</p>
+                        </div>
+                        <a href="/services/veneers/" class="text-accent font-bold text-sm hover:underline flex items-center gap-1">View Service <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand text-3xl mb-4"><i class="fas fa-teeth" aria-hidden="true"></i></div>
+                            <h3 class="text-xl font-bold mb-2">Dental Braces</h3>
+                            <p class="text-gray-500 text-sm mb-4">Align adjacent teeth and optimize space before placing an implant crown.</p>
+                            <p class="text-brand font-bold text-sm mb-4">₱5,000 Initial Down</p>
+                        </div>
+                        <a href="/services/dental-braces/" class="text-accent font-bold text-sm hover:underline flex items-center gap-1">View Service <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. FINAL CTA BAND -->
+        <section class="bg-gradient-to-br from-[#093E3A] via-[#0F766E] to-[#115E59] py-16 px-6 text-white text-center shadow-xl border-y border-teal-400/20">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Ready to Restore Your Smile Permanently?</h2>
+                <p class="text-lg opacity-90 mb-8 max-w-xl mx-auto">Schedule your personalized dental implant assessment at our clinic at [Your Address].</p>
+                <a href="/#booking?service=dental-implants" class="bg-[#FF6B35] text-[#0B2523] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#ff8252] transition shadow-xl inline-block min-h-[44px]">
+                    Book an Appointment
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-20 pb-10 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div>
+                <a href="/" class="flex items-center gap-2 mb-6">
+                    <div class="bg-brand text-white p-2 rounded-lg">
+                        <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight">[CLINIC NAME]</span>
+                </a>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    Advanced dental implantology and aesthetic smile reconstruction at [Your Address].
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://facebook.com/[PLACEHOLDER: clinic-facebook]" data-placeholder="configure-me" aria-label="Facebook page" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/[PLACEHOLDER: clinic-instagram]" data-placeholder="configure-me" aria-label="Instagram profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://tiktok.com/@[PLACEHOLDER: clinic-tiktok]" data-placeholder="configure-me" aria-label="TikTok profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="/services/" class="hover:text-white transition">All Dental Services</a></li>
+                    <li><a href="/#why-us" class="hover:text-white transition">Why Choose Us</a></li>
+                    <li><a href="/#promo" class="hover:text-white transition">Monthly Promos</a></li>
+                    <li><a href="/about/" class="hover:text-white transition">About Our Clinic</a></li>
+                    <li><a href="/privacy-policy/" data-placeholder="configure-me" class="hover:text-white transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Our Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="/services/teeth-whitening/" class="hover:text-white transition">Teeth Whitening</a></li>
+                    <li><a href="/services/dental-braces/" class="hover:text-white transition">Dental Braces</a></li>
+                    <li><a href="/services/tooth-extraction/" class="hover:text-white transition">Tooth Extraction</a></li>
+                    <li><a href="/services/root-canal/" class="hover:text-white transition">Root Canal Treatment</a></li>
+                    <li><a href="/services/dental-implants/" class="text-brand font-semibold">Dental Implants</a></li>
+                    <li><a href="/services/veneers/" class="hover:text-white transition">Dental Veneers</a></li>
+                    <li><a href="/services/pedia-dentistry/" class="hover:text-white transition">Pediatric Dentistry</a></li>
+                    <li><a href="/services/oral-prophylaxis/" class="hover:text-white transition">Oral Prophylaxis</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Stay Informed</h4>
+                <p class="text-gray-400 text-sm mb-4">Receive oral health tips and seasonal clinic announcements.</p>
+                <form onsubmit="event.preventDefault(); this.querySelector('p').classList.remove('hidden');" class="space-y-2">
+                    <div class="flex gap-2">
+                        <label for="imp-newsletter-email" class="sr-only">Your email</label>
+                        <input id="imp-newsletter-email" type="email" placeholder="Your email address" required class="bg-white/10 border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-brand w-full text-white">
+                        <button type="submit" aria-label="Subscribe" class="bg-brand px-4 py-3 rounded-lg hover:bg-blue-600 transition min-w-[44px] min-h-[44px] flex items-center justify-center"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+                    <p class="hidden text-xs text-green-400 font-semibold">Thank you for subscribing!</p>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-10 text-center text-gray-500 text-xs">
+            <p>© 2025 [CLINIC NAME]. All rights reserved. | Dental Implant Specialists.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING CONTACTS -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-40 items-end">
+        <a href="/#booking?service=dental-implants" aria-label="Book appointment now" class="md:hidden flex items-center gap-2 bg-[#0F766E] text-white px-6 py-4 rounded-full font-bold shadow-2xl animate-bounce min-h-[44px]">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i> BOOK NOW
+        </a>
+        <a href="viber://chat?number=+639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on Viber" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#7360f2] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-viber" aria-hidden="true"></i>
+        </a>
+        <a href="https://wa.me/639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on WhatsApp" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#25D366] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <script>
+        // MOBILE MENU
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (menuBtn && menu) menuBtn.addEventListener('click', () => menu.classList.remove('translate-x-full'));
+        if (closeBtn && menu) closeBtn.addEventListener('click', () => menu.classList.add('translate-x-full'));
+        mobileLinks.forEach(link => link.addEventListener('click', () => { if (menu) menu.classList.add('translate-x-full'); }));
+
+        // REVEAL ANIMATIONS
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // FAQ ACCORDION
+        document.querySelectorAll('.faq-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', (!isExpanded).toString());
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>

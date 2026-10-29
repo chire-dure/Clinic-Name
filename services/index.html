@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & META -->
+    <title>All Dental Services | [CLINIC NAME] [Your Address]</title>
+    <meta name="description" content="Explore complete dental services at [Your Address]: braces, whitening, implants, root canals, extractions & cleaning. Book your visit!">
+    <link rel="canonical" href="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/]">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="All Dental Services | [CLINIC NAME] [Your Address]">
+    <meta property="og:description" content="Comprehensive dental care at [Your Address]. From preventive cleanings to smile makeovers, our gentle dentists are here for your family.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/]">
+    <meta property="og:image" content="[PLACEHOLDER: https://www.yourdentalclinicdomain.com/images/og-share.jpg]">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="All Dental Services | [CLINIC NAME] [Your Address]">
+    <meta name="twitter:description" content="Comprehensive dental care at [Your Address]. Braces, whitening, implants, extractions, and pedia dentistry.">
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/]"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dental Services",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/]"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Central Clinic Configuration -->
+    <script src="/clinic-config.js"></script>
+
+    <!-- External Assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#0F766E', // Seafoam Teal
+                            light: '#14B8A6',
+                            dark: '#0B524C',
+                        },
+                        seafoam: {
+                            50: '#F0FDFB',
+                            100: '#E1FBF6',
+                            200: '#C4F6EE',
+                            500: '#2DD4BF',
+                            700: '#0F766E',
+                            900: '#134E4A'
+                        },
+                        mint: {
+                            50: '#F2FCF8',
+                            100: '#E2F7EF',
+                            500: '#10B981'
+                        },
+                        secondary: '#F4FAF8',
+                        accent: '#FF6B35',
+                        dark: '#0B2523'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .custom-shadow { box-shadow: 0 10px 30px -5px rgba(15, 118, 110, 0.12); }
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal { 
+                opacity: 0; 
+                transform: translateY(30px); 
+                transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+            }
+            .reveal.active { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-[#F4FAF8] overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" aria-label="Main navigation" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-white/95 backdrop-blur-md shadow-sm border-b border-teal-100/60">
+        <a href="/" class="flex items-center gap-2 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-1">
+            <div class="bg-gradient-to-br from-teal-500 to-[#0F766E] text-white p-2.5 rounded-xl group-hover:rotate-12 transition-transform shadow-md shadow-teal-900/10">
+                <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-brand">[CLINIC NAME] <span class="text-accent">[Your Address]</span></span>
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+            <a href="/about/" class="hover:text-brand transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand py-1 px-2 rounded">About Us</a>
+            <a href="/services/" class="text-brand border-b-2 border-brand pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded font-bold">Services</a>
+            <a href="/#booking" class="bg-[#0F766E] text-white px-6 py-3 rounded-full hover:bg-[#0B524C] transition shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F766E] min-h-[44px] flex items-center justify-center font-bold">Book Appointment</a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button id="mobile-menu-btn" aria-label="Open mobile menu" class="md:hidden text-brand text-2xl p-2 min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 text-2xl font-bold translate-x-full transition-transform duration-300">
+        <button id="close-menu" aria-label="Close mobile menu" class="absolute top-6 right-6 text-3xl text-brand p-2 min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <a href="/" class="mobile-link hover:text-brand transition">Home</a>
+        <a href="/about/" class="mobile-link hover:text-brand transition">About Us</a>
+        <a href="/services/" class="mobile-link text-brand font-bold">Services</a>
+        <a href="/#booking" class="bg-[#0F766E] text-white px-8 py-4 rounded-full min-h-[44px] flex items-center justify-center font-bold">Book Now</a>
+    </div>
+
+    <!-- MAIN DIRECTORY CONTENT -->
+    <main class="pt-28 pb-20">
+        <!-- Breadcrumbs & Header -->
+        <div class="max-w-7xl mx-auto px-6 md:px-12 pt-6">
+            <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-gray-500 mb-6 font-medium">
+                <a href="/" class="hover:text-brand transition">Home</a>
+                <span class="text-gray-300">/</span>
+                <span class="text-brand font-bold" aria-current="page">Services</span>
+            </nav>
+
+            <div class="max-w-3xl mb-12 reveal">
+                <span class="bg-teal-100/80 text-brand px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block border border-teal-200">
+                    Comprehensive Dental Directory
+                </span>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                    Our Dental Services in <span class="text-brand">[Your Address]</span>
+                </h1>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    We offer comprehensive, family-focused oral healthcare at [Your Address]. Whether you require routine preventive maintenance, orthodontic alignment, or advanced restorative dentistry, our team provides gentle, modern dental treatments tailored to your personal needs.
+                </p>
+            </div>
+
+            <!-- SPECIAL OFFERS & PACKAGES BANNER / SECTION (Promos In Services) -->
+            <section class="mb-16 reveal">
+                <div class="bg-gradient-to-br from-[#093E3A] via-[#0F766E] to-[#115E59] rounded-3xl p-8 md:p-10 text-white relative overflow-hidden shadow-2xl shadow-teal-950/20 border border-teal-400/20">
+                    <div class="absolute -top-16 -right-16 w-56 h-56 bg-accent/25 rounded-full blur-2xl pointer-events-none"></div>
+                    <div class="absolute -bottom-16 -left-16 w-56 h-56 bg-teal-300/20 rounded-full blur-2xl pointer-events-none"></div>
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 border-b border-white/15 pb-6">
+                            <div>
+                                <span class="inline-block bg-[#FF6B35] text-[#0B2523] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest mb-3 shadow-sm">
+                                    ✨ Current Promos & Packages ✨
+                                </span>
+                                <h2 class="text-3xl md:text-4xl font-extrabold">Exclusive Clinic Specials</h2>
+                                <p class="text-teal-100 text-sm md:text-base mt-2 max-w-xl">Take advantage of our current bundle discounts, flexible 0% installment plans, and promo rates for your family at [Your Address].</p>
+                            </div>
+                            <a href="/#booking" class="bg-white text-brand px-6 py-3 rounded-full font-bold text-sm hover:bg-teal-50 transition shadow-lg shrink-0 self-start md:self-auto min-h-[44px] flex items-center justify-center">
+                                Claim Any Promo Online
+                            </a>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <!-- Promo 1 -->
+                            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 flex flex-col justify-between hover:bg-white/15 transition">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-xs font-bold uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full">New Patient</span>
+                                        <span class="text-[#FF6B35] font-extrabold text-lg">₱999</span>
+                                    </div>
+                                    <h3 class="text-lg font-bold mb-2">Comprehensive Dental Checkup & Cleaning</h3>
+                                    <p class="text-xs text-teal-100 mb-4 leading-relaxed">Includes full oral cavity assessment, intraoral digital inspection, ultrasonic scaling, and personalized homecare plan.</p>
+                                </div>
+                                <a href="/#booking?service=oral-prophylaxis" class="text-xs font-bold text-[#0B2523] bg-[#FF6B35] hover:bg-[#ff8252] px-4 py-3 rounded-xl text-center transition flex items-center justify-center gap-1 min-h-[44px]">
+                                    Claim ₱999 Package <i class="fas fa-arrow-right text-[10px]" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <!-- Promo 2 -->
+                            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 flex flex-col justify-between hover:bg-white/15 transition relative">
+                                <span class="absolute -top-3 right-4 bg-[#FF6B35] text-[#0B2523] text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full shadow-sm">Most Popular</span>
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-xs font-bold uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full">Orthodontics</span>
+                                        <span class="text-[#FF6B35] font-extrabold text-lg">₱5k Down</span>
+                                    </div>
+                                    <h3 class="text-lg font-bold mb-2">Dental Braces All-In Promo</h3>
+                                    <p class="text-xs text-teal-100 mb-4 leading-relaxed">Low downpayment package with free panoramic x-ray evaluation, initial study casts, and 0% interest flexible monthly payment plans.</p>
+                                </div>
+                                <a href="/services/dental-braces/" class="text-xs font-bold text-[#0B2523] bg-[#FF6B35] hover:bg-[#ff8252] px-4 py-3 rounded-xl text-center transition flex items-center justify-center gap-1 min-h-[44px]">
+                                    View Braces Promo <i class="fas fa-arrow-right text-[10px]" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <!-- Promo 3 -->
+                            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 flex flex-col justify-between hover:bg-white/15 transition">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-xs font-bold uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full">Cosmetic</span>
+                                        <span class="text-[#FF6B35] font-extrabold text-lg">₱4,500</span>
+                                    </div>
+                                    <h3 class="text-lg font-bold mb-2">In-Office Teeth Whitening Glow</h3>
+                                    <p class="text-xs text-teal-100 mb-4 leading-relaxed">Professional in-chair light-activated bleaching session. Lift up to 6–8 shades of staining in under one hour safely.</p>
+                                </div>
+                                <a href="/services/teeth-whitening/" class="text-xs font-bold text-[#0B2523] bg-[#FF6B35] hover:bg-[#ff8252] px-4 py-3 rounded-xl text-center transition flex items-center justify-center gap-1 min-h-[44px]">
+                                    View Whitening Special <i class="fas fa-arrow-right text-[10px]" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Title For Service Catalog -->
+            <div class="mb-8">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-dark">All Dental Procedures & Treatments</h2>
+                <p class="text-gray-500 text-sm mt-1">Select any service below to view procedure details, benefits, and schedule an appointment.</p>
+            </div>
+
+            <!-- 8 Large Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 reveal">
+                
+                <!-- Service 1: Teeth Whitening -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl border-t-4 border-brand custom-shadow hover:-translate-y-2 transition duration-300 group flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                            <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-3 text-dark">Teeth Whitening</h2>
+                        <p class="text-gray-600 text-base mb-4 leading-relaxed">
+                            Professional in-office whitening designed to safely lift deep stains caused by coffee, tea, and aging. Achieve noticeably brighter teeth in a single visit with clinically monitored safety.
+                        </p>
+                        <p class="text-brand font-extrabold text-lg mb-6">Starting from ₱4,500</p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
+                        <a href="/services/teeth-whitening/" class="text-brand font-bold flex items-center gap-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded p-1">
+                            Learn More About Whitening <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                        <a href="/#booking?service=teeth-whitening" class="bg-[#0F766E] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0B524C] transition shadow-md shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Book Whitening
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Dental Braces -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl border-t-4 border-brand custom-shadow hover:-translate-y-2 transition duration-300 group flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                            <i class="fas fa-teeth" aria-hidden="true"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-3 text-dark">Dental Braces & Orthodontics</h2>
+                        <p class="text-gray-600 text-base mb-4 leading-relaxed">
+                            Correct crooked teeth, spacing issues, and bite irregularities with traditional metal or aesthetic ceramic braces. Enjoy structured adjustment visits and low downpayment monthly plans.
+                        </p>
+                        <p class="text-brand font-extrabold text-lg mb-6">₱5,000 Initial Down (Flexible Monthly Terms)</p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
+                        <a href="/services/dental-braces/" class="text-brand font-bold flex items-center gap-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded p-1">
+                            Learn More About Braces <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                        <a href="/#booking?service=dental-braces" class="bg-[#0F766E] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0B524C] transition shadow-md shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Book Braces Assessment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Tooth Extraction -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl border-t-4 border-brand custom-shadow hover:-translate-y-2 transition duration-300 group flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                            <i class="fas fa-tooth" aria-hidden="true"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-3 text-dark">Tooth Extraction & Wisdom Teeth</h2>
+                        <p class="text-gray-600 text-base mb-4 leading-relaxed">
+                            Gentle, pain-managed extractions for severely decayed teeth, broken roots, or impacted wisdom teeth. Our experienced dentists ensure your comfort and provide clear recovery instructions.
+                        </p>
+                        <p class="text-brand font-extrabold text-lg mb-6">Starting from ₱800</p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
+                        <a href="/services/tooth-extraction/" class="text-brand font-bold flex items-center gap-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded p-1">
+                            Learn More About Extractions <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                        <a href="/#booking?service=tooth-extraction" class="bg-[#0F766E] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0B524C] transition shadow-md shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Book Extraction
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Root Canal -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl border-t-4 border-brand custom-shadow hover:-translate-y-2 transition duration-300 group flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                            <i class="fas fa-microscope" aria-hidden="true"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-3 text-dark">Root Canal Therapy</h2>
+                        <p class="text-gray-600 text-base mb-4 leading-relaxed">
+                            Save your natural tooth from extraction when deep infection reaches the pulp nerve. Endodontic treatment relieves intense toothaches and protects internal tooth health for the long term.
+                        </p>
+                        <p class="text-brand font-extrabold text-lg mb-6">Starting from ₱6,000</p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
+                        <a href="/services/root-canal/" class="text-brand font-bold flex items-center gap-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded p-1">
+                            Learn More About Root Canals <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                        <a href="/#booking?service=root-canal" class="bg-[#0F766E] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0B524C] transition shadow-md shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Book Root Canal Consultation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5: Dental Implants -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl border-t-4 border-brand custom-shadow hover:-translate-y-2 transition duration-300 group flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                            <i class="fas fa-fill-drip" aria-hidden="true"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-3 text-dark">Dental Implants</h2>
+                        <p class="text-gray-600 text-base mb-4 leading-relaxed">
+                            The gold-standard permanent replacement for missing teeth. Titanium posts integrate with your jawbone to securely anchor realistic crowns that look, feel, and function like natural teeth.
+                        </p>
+                        <p class="text-brand font-extrabold text-lg mb-6">Pricing varies — Inquire at consultation</p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
+                        <a href="/services/dental-implants/" class="text-brand font-bold flex items-center gap-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded p-1">
+                            Learn More About Implants <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                        <a href="/#booking?service=dental-implants" class="bg-[#0F766E] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0B524C] transition shadow-md shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Inquire for Implants
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6: Veneers -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl border-t-4 border-brand custom-shadow hover:-translate-y-2 transition duration-300 group flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                            <i class="fas fa-sparkles" aria-hidden="true"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-3 text-dark">Dental Veneers</h2>
+                        <p class="text-gray-600 text-base mb-4 leading-relaxed">
+                            Custom composite or porcelain shells bonded to the front of teeth to correct stubborn discoloration, small gaps, and irregular chips for a symmetrical, confident smile.
+                        </p>
+                        <p class="text-brand font-extrabold text-lg mb-6">Starting from ₱3,500 per tooth</p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
+                        <a href="/services/veneers/" class="text-brand font-bold flex items-center gap-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded p-1">
+                            Learn More About Veneers <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                        <a href="/#booking?service=veneers" class="bg-[#0F766E] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0B524C] transition shadow-md shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Book Veneers Consult
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 7: Pedia Dentistry -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl border-t-4 border-brand custom-shadow hover:-translate-y-2 transition duration-300 group flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                            <i class="fas fa-child" aria-hidden="true"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-3 text-dark">Pediatric Dentistry</h2>
+                        <p class="text-gray-600 text-base mb-4 leading-relaxed">
+                            Gentle, cheerful dental care created specifically for children, toddlers, and teens. We establish positive early dental habits through fun checkups, fluoride treatments, and gentle sealants.
+                        </p>
+                        <p class="text-brand font-extrabold text-lg mb-6">Starting from ₱700</p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
+                        <a href="/services/pedia-dentistry/" class="text-brand font-bold flex items-center gap-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded p-1">
+                            Learn More About Pedia Care <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                        <a href="/#booking?service=pedia-dentistry" class="bg-[#0F766E] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0B524C] transition shadow-md shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Book Child Checkup
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 8: Oral Prophylaxis -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl border-t-4 border-brand custom-shadow hover:-translate-y-2 transition duration-300 group flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-50 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                            <i class="fas fa-pump-soap" aria-hidden="true"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-3 text-dark">Oral Prophylaxis (Dental Cleaning)</h2>
+                        <p class="text-gray-600 text-base mb-4 leading-relaxed">
+                            Essential ultrasonic scaling and polishing to remove hardened calculus (tartar) and surface stains that normal toothbrushing cannot reach, protecting your gums from gingivitis.
+                        </p>
+                        <p class="text-brand font-extrabold text-lg mb-6">Starting from ₱800</p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
+                        <a href="/services/oral-prophylaxis/" class="text-brand font-bold flex items-center gap-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded p-1">
+                            Learn More About Cleaning <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                        <a href="/#booking?service=oral-prophylaxis" class="bg-[#0F766E] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0B524C] transition shadow-md shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Book Cleaning Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Booking CTA Band -->
+        <div class="mt-20 bg-brand py-16 px-6 text-white text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Ready to Schedule Your Dental Visit?</h2>
+                <p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto">Our friendly dental clinic is open Monday through Saturday. Book online or call us for consultations.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="/#booking" class="bg-[#FF6B35] text-[#0B2523] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#ff8252] transition shadow-xl min-h-[44px] flex items-center justify-center">
+                        Book Appointment Now
+                    </a>
+                    <a href="tel:+639171234567" data-placeholder="configure-me" class="bg-white text-brand px-8 py-4 rounded-full font-bold text-lg hover:bg-secondary transition shadow-xl min-h-[44px] flex items-center justify-center">
+                        Call [PLACEHOLDER: Phone]
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-20 pb-10 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div>
+                <a href="/" class="flex items-center gap-2 mb-6">
+                    <div class="bg-brand text-white p-2 rounded-lg">
+                        <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight">[CLINIC NAME]</span>
+                </a>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    Providing top-tier dental healthcare to patients at [Your Address]. Your smile and comfort come first.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://facebook.com/[PLACEHOLDER: clinic-facebook]" data-placeholder="configure-me" aria-label="Facebook page" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/[PLACEHOLDER: clinic-instagram]" data-placeholder="configure-me" aria-label="Instagram profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://tiktok.com/@[PLACEHOLDER: clinic-tiktok]" data-placeholder="configure-me" aria-label="TikTok profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="/services/" class="hover:text-white transition">All Services</a></li>
+                    <li><a href="/#why-us" class="hover:text-white transition">Why Choose Us</a></li>
+                    <li><a href="/#promo" class="hover:text-white transition">Monthly Promos</a></li>
+                    <li><a href="/about/" class="hover:text-white transition">About Our Clinic</a></li>
+                    <li><a href="/privacy-policy/" data-placeholder="configure-me" class="hover:text-white transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Our Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="/services/teeth-whitening/" class="hover:text-white transition">Teeth Whitening</a></li>
+                    <li><a href="/services/dental-braces/" class="hover:text-white transition">Dental Braces</a></li>
+                    <li><a href="/services/tooth-extraction/" class="hover:text-white transition">Tooth Extraction</a></li>
+                    <li><a href="/services/root-canal/" class="hover:text-white transition">Root Canal Treatment</a></li>
+                    <li><a href="/services/dental-implants/" class="hover:text-white transition">Dental Implants</a></li>
+                    <li><a href="/services/veneers/" class="hover:text-white transition">Dental Veneers</a></li>
+                    <li><a href="/services/pedia-dentistry/" class="hover:text-white transition">Pediatric Dentistry</a></li>
+                    <li><a href="/services/oral-prophylaxis/" class="hover:text-white transition">Oral Prophylaxis</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Stay Informed</h4>
+                <p class="text-gray-400 text-sm mb-4">Receive oral health tips and seasonal clinic announcements.</p>
+                <form onsubmit="event.preventDefault(); this.querySelector('p').classList.remove('hidden');" class="space-y-2">
+                    <div class="flex gap-2">
+                        <label for="footer-email" class="sr-only">Your email</label>
+                        <input id="footer-email" type="email" placeholder="Your email address" required class="bg-white/10 border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-brand w-full text-white">
+                        <button type="submit" aria-label="Subscribe" class="bg-brand px-4 py-3 rounded-lg hover:bg-blue-600 transition min-w-[44px] min-h-[44px] flex items-center justify-center"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+                    <p class="hidden text-xs text-green-400 font-semibold">Thank you for subscribing!</p>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-10 text-center text-gray-500 text-xs">
+            <p>© 2025 [CLINIC NAME] Dental Clinic. All rights reserved. | [Your Address].</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING CONTACTS -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-40 items-end">
+        <a href="/#booking" aria-label="Book appointment now" class="md:hidden flex items-center gap-2 bg-[#0F766E] text-white px-6 py-4 rounded-full font-bold shadow-2xl animate-bounce min-h-[44px]">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i> BOOK NOW
+        </a>
+        <a href="viber://chat?number=+639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on Viber" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#7360f2] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-viber" aria-hidden="true"></i>
+        </a>
+        <a href="https://wa.me/639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on WhatsApp" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#25D366] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <script>
+        // MOBILE MENU
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (menuBtn && menu) menuBtn.addEventListener('click', () => menu.classList.remove('translate-x-full'));
+        if (closeBtn && menu) closeBtn.addEventListener('click', () => menu.classList.add('translate-x-full'));
+        mobileLinks.forEach(link => link.addEventListener('click', () => { if (menu) menu.classList.add('translate-x-full'); }));
+
+        // REVEAL ANIMATIONS
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', reveal);
+        reveal();
+    </script>
+</body>
+</html>

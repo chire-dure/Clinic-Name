@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & META -->
+    <title>Oral Prophylaxis (Dental Cleaning) | [CLINIC NAME] [Your Address]</title>
+    <meta name="description" content="Professional oral prophylaxis (dental cleaning) at [Your Address]. Remove tartar, prevent gum disease, and polish enamel starting at ₱800.">
+    <link rel="canonical" href="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/oral-prophylaxis/]">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Oral Prophylaxis (Dental Cleaning) | [CLINIC NAME] [Your Address]">
+    <meta property="og:description" content="Thorough ultrasonic dental cleaning at [Your Address]. Remove calcified calculus, prevent gingivitis, and polish your teeth for fresh breath.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/oral-prophylaxis/]">
+    <meta property="og:image" content="[PLACEHOLDER: https://www.yourdentalclinicdomain.com/images/og-cleaning.jpg]">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/]"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/]"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Oral Prophylaxis",
+          "item": "[CANONICAL PLACEHOLDER: https://www.yourdentalclinicdomain.com/services/oral-prophylaxis/]"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Central Clinic Configuration -->
+    <script src="/clinic-config.js"></script>
+
+    <!-- External Assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#0F766E', // Seafoam Teal
+                            light: '#14B8A6',
+                            dark: '#0B524C',
+                        },
+                        seafoam: {
+                            50: '#F0FDFB',
+                            100: '#E1FBF6',
+                            200: '#C4F6EE',
+                            500: '#2DD4BF',
+                            700: '#0F766E',
+                            900: '#134E4A'
+                        },
+                        mint: {
+                            50: '#F2FCF8',
+                            100: '#E2F7EF',
+                            500: '#10B981'
+                        },
+                        secondary: '#F4FAF8',
+                        accent: '#FF6B35',
+                        dark: '#0B2523'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .custom-shadow { box-shadow: 0 10px 30px -5px rgba(15, 118, 110, 0.12); }
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+            .reveal.active { opacity: 1; transform: translateY(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+    </style>
+</head>
+<body class="font-sans text-[#0B2523] bg-[#F4FAF8] overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" aria-label="Main navigation" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-white/95 backdrop-blur-md shadow-sm border-b border-teal-100/60">
+        <a href="/" class="flex items-center gap-2 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-1">
+            <div class="bg-gradient-to-br from-teal-500 to-[#0F766E] text-white p-2.5 rounded-xl group-hover:rotate-12 transition-transform shadow-md shadow-teal-900/10">
+                <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-[#0F766E]">[CLINIC NAME] <span class="text-accent">[Your Address]</span></span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+            <a href="/about/" class="hover:text-brand transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand py-1 px-2 rounded">About Us</a>
+            <a href="/services/" class="text-brand border-b-2 border-brand pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded font-bold">Services</a>
+            <a href="/#booking" class="bg-[#0F766E] text-white px-6 py-3 rounded-full hover:bg-[#0B524C] transition shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F766E] min-h-[44px] flex items-center justify-center font-bold">Book Appointment</a>
+        </div>
+
+        <button id="mobile-menu-btn" aria-label="Open mobile menu" class="md:hidden text-brand text-2xl p-2 min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 text-2xl font-bold translate-x-full transition-transform duration-300">
+        <button id="close-menu" aria-label="Close mobile menu" class="absolute top-6 right-6 text-3xl text-brand p-2 min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <a href="/" class="mobile-link hover:text-brand transition">Home</a>
+        <a href="/about/" class="mobile-link hover:text-brand transition">About Us</a>
+        <a href="/services/" class="mobile-link text-brand font-bold">Services</a>
+        <a href="/#booking" class="bg-[#0F766E] text-white px-8 py-4 rounded-full min-h-[44px] flex items-center justify-center font-bold">Book Now</a>
+    </div>
+
+    <main class="pt-24 pb-20">
+        <!-- 1. BREADCRUMBS -->
+        <div class="max-w-7xl mx-auto px-6 md:px-12 pt-6">
+            <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-gray-500 mb-6 font-medium">
+                <a href="/" class="hover:text-brand transition">Home</a>
+                <span class="text-gray-300">/</span>
+                <a href="/services/" class="hover:text-brand transition">Services</a>
+                <span class="text-gray-300">/</span>
+                <span class="text-brand font-bold" aria-current="page">Oral Prophylaxis</span>
+            </nav>
+        </div>
+
+        <!-- 2. SERVICE HERO -->
+        <section class="relative bg-gradient-to-b from-[#E7F7F4] via-[#F2FAF8] to-white py-16 px-6 md:px-12 border-b border-teal-100/70 overflow-hidden">
+            <!-- Decorative mint ambient glow -->
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-teal-200/40 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+            <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-emerald-100/50 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+                <div class="md:w-1/2 reveal">
+                    <span class="bg-teal-100/90 text-[#0F766E] border border-teal-200/70 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block shadow-sm">
+                        Preventive Care at [Your Address]
+                    </span>
+                    <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
+                        Oral Prophylaxis <span class="text-[#0F766E]">(Dental Cleaning)</span> in [Your Address]
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Keep your smile healthy and breath fresh with thorough, gentle dental cleaning. Our ultrasonic scaling comfortably dislodges hardened tartar and surface stains that regular brushing cannot reach.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/#booking?service=oral-prophylaxis" class="bg-[#0F766E] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0B524C] transition shadow-lg shadow-teal-900/10 min-h-[44px] flex items-center justify-center">
+                            Book Cleaning Appointment
+                        </a>
+                        <a href="tel:+639171234567" data-placeholder="configure-me" class="border-2 border-[#0F766E] text-[#0F766E] px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0F766E] hover:text-white transition min-h-[44px] flex items-center justify-center">
+                            Call [PLACEHOLDER: Phone]
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 reveal">
+                    <!-- Ultrasonic Hygiene Operatory Hero Card -->
+                    <div class="w-full aspect-video md:aspect-[4/3] rounded-3xl bg-gradient-to-br from-[#093E3A] via-[#0F766E] to-[#115E59] flex flex-col items-center justify-center text-white p-8 text-center shadow-2xl relative overflow-hidden border border-teal-400/20">
+                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(45,212,191,0.25),transparent_60%)] pointer-events-none" aria-hidden="true"></div>
+                        <i class="fas fa-pump-soap text-6xl md:text-7xl mb-4 text-teal-200" aria-hidden="true"></i>
+                        <p class="text-xl font-bold">Hygiene Operatory</p>
+                        <p class="text-teal-200 text-xs mt-2 uppercase tracking-wider">[Replace with clinic photo of ultrasonic hygiene setup]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. OVERVIEW -->
+        <section class="py-20 px-6 md:px-12 max-w-5xl mx-auto reveal">
+            <h2 class="text-3xl font-extrabold mb-6 text-dark">What is Oral Prophylaxis?</h2>
+            <div class="space-y-5 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    Oral prophylaxis is a routine, professional dental cleaning procedure performed to thoroughly remove dental plaque, mineralized calculus (tartar), and external surface stains from your teeth. Plaque is a sticky, invisible bacterial film that forms naturally on enamel every day. When plaque is not completely eliminated by daily brushing and flossing, minerals in your saliva calcify it within 24 to 72 hours into rock-hard calculus.
+                </p>
+                <p>
+                    Once tartar forms, no household toothbrush, water flosser, or dental floss can remove it. Only specialized dental instruments—such as high-frequency ultrasonic scalers and hand curettes—can safely vibrate calculus away without damaging delicate enamel.
+                </p>
+                <p>
+                    It is important to understand the difference between routine prophylaxis and deep scaling:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                    <div class="bg-gray-50 p-5 rounded-2xl border border-gray-200">
+                        <h3 class="font-bold text-dark text-base mb-1">Routine Oral Prophylaxis</h3>
+                        <p class="text-gray-600 text-sm">Focuses on supragingival cleaning (above the gumline) and slight subgingival margins for patients with healthy gums or mild, reversible gingivitis.</p>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-2xl border border-gray-200">
+                        <h3 class="font-bold text-dark text-base mb-1">Deep Scaling & Root Planing</h3>
+                        <p class="text-gray-600 text-sm">A therapeutic procedure required when chronic periodontitis has produced deep gum pockets (4mm+), smoothing root surfaces below the gumline to halt bone loss.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. WHO IS IT FOR? -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-5xl mx-auto reveal">
+                <h2 class="text-3xl font-extrabold mb-6 text-dark">Who Needs Regular Dental Cleanings?</h2>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Every individual with teeth benefits from routine cleanings. Clinical guidelines recommend a professional prophylaxis every <strong>6 months</strong> for the average patient:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Bleeding or Swollen Gums:</strong> Gums that bleed during routine brushing indicate active gingival inflammation that cleaning reverses.</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Coffee, Tea, or Smoker Stains:</strong> Unsightly yellow or brown deposits that regular toothpaste cannot lift.</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Braces & Orthodontic Patients:</strong> Brackets trap plaque easily; cleanings every 3 to 4 months prevent white decalcification scars.</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                        <i class="fas fa-check-circle text-brand text-xl mt-1" aria-hidden="true"></i>
+                        <p class="text-gray-700"><strong>Persistent Bad Breath (Halitosis):</strong> Chronic odor caused by anaerobic bacterial colonies hiding in interdental tartar deposits.</p>
+                    </div>
+                </div>
+                <div class="p-5 bg-blue-50 rounded-2xl border border-blue-200 text-brand text-sm flex items-start gap-3">
+                    <i class="fas fa-shield-halved text-brand text-lg mt-0.5" aria-hidden="true"></i>
+                    <p>
+                        <strong>Preventive Dentistry Saves Teeth:</strong> Tartar buildup left untreated for years leads to chronic periodontitis, the primary cause of loose teeth and adult tooth loss in the Philippines.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BENEFITS & CONSIDERATIONS -->
+        <section class="py-20 px-6 md:px-12 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-extrabold mb-10 text-center text-dark reveal">Benefits & What to Expect Afterward</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+                <!-- Benefits -->
+                <div class="bg-gradient-to-br from-[#F0FDFB] to-[#E2F7EF] p-8 rounded-3xl border border-teal-200/70 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 text-brand flex items-center gap-3">
+                        <i class="fas fa-check-circle text-brand text-2xl" aria-hidden="true"></i> Health Benefits
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Halts Gum Disease:</strong> Prevents gingivitis from advancing into destructive, irreversible periodontitis.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Polishes Away Stains:</strong> Leaves teeth feeling silky smooth and noticeably cleaner after a single appointment.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Fresh Breath Guarantee:</strong> Eliminates hidden bacterial breeding grounds responsible for chronic halitosis.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-brand mt-1" aria-hidden="true"></i>
+                            <span><strong>Early Problem Detection:</strong> Allows your dentist to detect early microscopic cavities before they cause severe pain.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Considerations -->
+                <div class="bg-orange-50/60 p-8 rounded-3xl border border-orange-100">
+                    <h3 class="text-xl font-bold mb-6 text-accent flex items-center gap-3">
+                        <i class="fas fa-circle-exclamation text-accent text-2xl" aria-hidden="true"></i> Post-Cleaning Facts
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Temporary Cold Sensitivity:</strong> When thick tartar coats are removed, newly exposed roots may feel cold-sensitive for 24 to 48 hours.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Mild Gum Bleeding:</strong> Severely inflamed gums may bleed slightly during scaling as infected pocket tissues are cleaned.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Spaces Between Teeth:</strong> If large calculus bridges were filling gaps between lower teeth, the spaces will reappear naturally.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-info text-accent mt-1" aria-hidden="true"></i>
+                            <span><strong>Requires Home Flossing:</strong> Cleaning resets your oral baseline, but daily home flossing is essential to stop tartar reforming.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. WHAT TO EXPECT -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-5xl mx-auto reveal">
+                <h2 class="text-3xl font-extrabold mb-10 text-center text-dark">What Happens During Your Cleaning?</h2>
+                <div class="space-y-6">
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Oral Health Examination</h3>
+                            <p class="text-gray-600">The dentist examines your teeth, gums, and soft tissues with a dental mirror, screening for cavities, gingival recession, and enamel wear.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Ultrasonic Scaling</h3>
+                            <p class="text-gray-600">An ultrasonic tip vibrating at high frequencies with a fine water spray shatters calculus and flushes away bacteria from enamel and gumline margins.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Fine Hand Scaling & Flossing</h3>
+                            <p class="text-gray-600">Precision hand curettes remove any remaining stubborn deposits in tight contact areas between teeth, followed by thorough interdental flossing.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand text-white rounded-xl flex items-center justify-center font-extrabold text-xl">4</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Prophylaxis Paste Polishing</h3>
+                            <p class="text-gray-600">A soft rotating rubber cup with pleasant-flavored polishing paste buffs away superficial stains, leaving enamel slick and resistant to new plaque adhesion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. AFTERCARE & RECOVERY -->
+        <section class="py-20 px-6 md:px-12 max-w-5xl mx-auto reveal">
+            <h2 class="text-3xl font-extrabold mb-6 text-dark">Post-Cleaning Maintenance Tips</h2>
+            <p class="text-gray-600 mb-8 text-lg">
+                Maintain that fresh, slick feeling and prevent sensitivity with these post-prophylaxis habits:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="p-6 bg-secondary rounded-2xl border border-blue-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand">First 24 Hours</h3>
+                    <p class="text-gray-600 text-sm">If your teeth feel slightly sensitive, brush with lukewarm water and a sensitive toothpaste. Avoid intensely hot, ice-cold, or acidic beverages for the first day.</p>
+                </div>
+                <div class="p-6 bg-secondary rounded-2xl border border-blue-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand">Daily Routine</h3>
+                    <p class="text-gray-600 text-sm">Brush twice daily for two minutes using a soft-bristled brush angled at 45 degrees to the gumline. Floss every night before bedtime to prevent interdental tartar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. PRICING -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <h2 class="text-3xl font-extrabold mb-4 text-dark">Treatment Costs</h2>
+                <div class="bg-white p-8 md:p-10 rounded-3xl border border-gray-200 custom-shadow inline-block max-w-lg w-full mb-6">
+                    <p class="text-gray-500 uppercase tracking-widest text-xs font-bold mb-2">Routine Oral Prophylaxis</p>
+                    <p class="text-4xl md:text-5xl font-extrabold text-brand mb-4">Starting at ₱800</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Includes complete oral examination, full-mouth ultrasonic scaling, hand scaling between tight teeth, and prophylaxis polishing.
+                    </p>
+                    <a href="/#booking?service=oral-prophylaxis" class="bg-accent text-white px-8 py-3.5 rounded-full font-bold text-base hover:bg-orange-600 transition inline-block shadow-md">
+                        Book Cleaning Appointment
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm max-w-xl mx-auto italic">
+                    Pricing varies depending on whether light, moderate, or heavy calculus is present, or if deep subgingival scaling (root planing) is required. A full cost breakdown will be provided after your consultation.
+                </p>
+            </div>
+        </section>
+
+        <!-- 9. FAQS -->
+        <section class="py-20 px-6 md:px-12 max-w-4xl mx-auto reveal">
+            <h2 class="text-3xl font-extrabold mb-12 text-center text-dark">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="op-faq-1">
+                        <span class="font-bold text-dark">Does dental cleaning damage or thin tooth enamel?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="op-faq-1" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        No. Ultrasonic scalers vibrate mechanically against calculus without cutting tooth structure. The enamel surface is much harder than the tartar being removed, leaving your natural enamel intact.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="op-faq-2">
+                        <span class="font-bold text-dark">Why do my gums bleed during cleaning?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="op-faq-2" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        Bleeding occurs because bacteria in tartar deposits cause the surrounding gums to become chronically inflamed (gingivitis). As the tartar is removed and gums heal over the next few days, bleeding will stop completely.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="op-faq-3">
+                        <span class="font-bold text-dark">Why do my teeth feel sensitive to cold after cleaning?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="op-faq-3" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        When thick tartar that was previously insulating tooth roots is removed, the exposed root surface is temporarily exposed to temperature changes. This sensitivity is normal and typically subsides within 24 to 48 hours.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="op-faq-4">
+                        <span class="font-bold text-dark">How often should I have an oral prophylaxis?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="op-faq-4" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        Every 6 months is recommended for most patients. Individuals wearing orthodontic braces, heavy smokers, or those with a history of periodontitis may be advised to come every 3 to 4 months for optimal gum health.
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-expanded="false" aria-controls="op-faq-5">
+                        <span class="font-bold text-dark">Can teeth cleaning whiten my teeth?</span>
+                        <i class="fas fa-chevron-down text-brand transition-transform" aria-hidden="true"></i>
+                    </button>
+                    <div id="op-faq-5" class="faq-content hidden px-8 pb-6 text-gray-600 leading-relaxed">
+                        Cleaning removes external surface stains from coffee and nicotine, restoring your natural enamel shade. However, if you desire a dramatically brighter shade, a dedicated in-office teeth whitening treatment is recommended after cleaning.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. RELATED SERVICES -->
+        <section class="py-16 px-6 md:px-12 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-extrabold mb-8 text-center text-dark">You May Also Be Interested In</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand text-3xl mb-4"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i></div>
+                            <h3 class="text-xl font-bold mb-2">Teeth Whitening</h3>
+                            <p class="text-gray-500 text-sm mb-4">Pair your fresh cleaning with professional bleaching for instant multi-shade brighter results.</p>
+                            <p class="text-brand font-bold text-sm mb-4">Starting at ₱4,500</p>
+                        </div>
+                        <a href="/services/teeth-whitening/" class="text-accent font-bold text-sm hover:underline flex items-center gap-1">View Service <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand text-3xl mb-4"><i class="fas fa-teeth" aria-hidden="true"></i></div>
+                            <h3 class="text-xl font-bold mb-2">Dental Braces</h3>
+                            <p class="text-gray-500 text-sm mb-4">Straighten misaligned teeth to eliminate hard-to-reach crevices where plaque accumulates.</p>
+                            <p class="text-brand font-bold text-sm mb-4">₱5,000 Initial Down</p>
+                        </div>
+                        <a href="/services/dental-braces/" class="text-accent font-bold text-sm hover:underline flex items-center gap-1">View Service <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand text-3xl mb-4"><i class="fas fa-child" aria-hidden="true"></i></div>
+                            <h3 class="text-xl font-bold mb-2">Pediatric Dentistry</h3>
+                            <p class="text-gray-500 text-sm mb-4">Gentle cleanings and fluoride varnish designed specifically for growing children.</p>
+                            <p class="text-brand font-bold text-sm mb-4">Starting at ₱700</p>
+                        </div>
+                        <a href="/services/pedia-dentistry/" class="text-accent font-bold text-sm hover:underline flex items-center gap-1">View Service <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. FINAL CTA BAND -->
+        <section class="bg-gradient-to-br from-[#093E3A] via-[#0F766E] to-[#115E59] py-16 px-6 text-white text-center shadow-xl border-y border-teal-400/20">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Due for Your 6-Month Dental Cleaning?</h2>
+                <p class="text-lg opacity-90 mb-8 max-w-xl mx-auto text-teal-100">Refresh your smile and protect your gums with our gentle dental cleaning at [Your Address].</p>
+                <a href="/#booking?service=oral-prophylaxis" class="bg-[#FF6B35] text-[#0B2523] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#ff8252] transition shadow-xl inline-block min-h-[44px]">
+                    Book an Appointment
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-20 pb-10 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div>
+                <a href="/" class="flex items-center gap-2 mb-6">
+                    <div class="bg-brand text-white p-2 rounded-lg">
+                        <i class="fas fa-tooth text-xl" aria-hidden="true"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight">[CLINIC NAME]</span>
+                </a>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    Preventive oral hygiene and comprehensive family dentistry at [Your Address].
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://facebook.com/[PLACEHOLDER: clinic-facebook]" data-placeholder="configure-me" aria-label="Facebook page" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/[PLACEHOLDER: clinic-instagram]" data-placeholder="configure-me" aria-label="Instagram profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://tiktok.com/@[PLACEHOLDER: clinic-tiktok]" data-placeholder="configure-me" aria-label="TikTok profile" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition min-w-[44px] min-h-[44px]"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="/services/" class="hover:text-white transition">All Dental Services</a></li>
+                    <li><a href="/#why-us" class="hover:text-white transition">Why Choose Us</a></li>
+                    <li><a href="/#promo" class="hover:text-white transition">Monthly Promos</a></li>
+                    <li><a href="/about/" class="hover:text-white transition">About Our Clinic</a></li>
+                    <li><a href="/privacy-policy/" data-placeholder="configure-me" class="hover:text-white transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Our Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="/services/teeth-whitening/" class="hover:text-white transition">Teeth Whitening</a></li>
+                    <li><a href="/services/dental-braces/" class="hover:text-white transition">Dental Braces</a></li>
+                    <li><a href="/services/tooth-extraction/" class="hover:text-white transition">Tooth Extraction</a></li>
+                    <li><a href="/services/root-canal/" class="hover:text-white transition">Root Canal Treatment</a></li>
+                    <li><a href="/services/dental-implants/" class="hover:text-white transition">Dental Implants</a></li>
+                    <li><a href="/services/veneers/" class="hover:text-white transition">Dental Veneers</a></li>
+                    <li><a href="/services/pedia-dentistry/" class="hover:text-white transition">Pediatric Dentistry</a></li>
+                    <li><a href="/services/oral-prophylaxis/" class="text-brand font-semibold">Oral Prophylaxis</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Stay Informed</h4>
+                <p class="text-gray-400 text-sm mb-4">Receive oral health tips and seasonal clinic announcements.</p>
+                <form onsubmit="event.preventDefault(); this.querySelector('p').classList.remove('hidden');" class="space-y-2">
+                    <div class="flex gap-2">
+                        <label for="op-newsletter-email" class="sr-only">Your email</label>
+                        <input id="op-newsletter-email" type="email" placeholder="Your email address" required class="bg-white/10 border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-brand w-full text-white">
+                        <button type="submit" aria-label="Subscribe" class="bg-brand px-4 py-3 rounded-lg hover:bg-blue-600 transition min-w-[44px] min-h-[44px] flex items-center justify-center"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+                    <p class="hidden text-xs text-green-400 font-semibold">Thank you for subscribing!</p>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-10 text-center text-gray-500 text-xs">
+            <p>© 2025 [CLINIC NAME]. All rights reserved. | Preventive Dental Hygiene.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING CONTACTS -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-40 items-end">
+        <a href="/#booking?service=oral-prophylaxis" aria-label="Book appointment now" class="md:hidden flex items-center gap-2 bg-[#0F766E] text-white px-6 py-4 rounded-full font-bold shadow-2xl animate-bounce min-h-[44px]">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i> BOOK NOW
+        </a>
+        <a href="viber://chat?number=+639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on Viber" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#7360f2] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-viber" aria-hidden="true"></i>
+        </a>
+        <a href="https://wa.me/639171234567" data-placeholder="configure-me" target="_blank" rel="noopener noreferrer" aria-label="Message on WhatsApp" class="w-14 h-14 min-w-[44px] min-h-[44px] bg-[#25D366] text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <script>
+        // MOBILE MENU
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (menuBtn && menu) menuBtn.addEventListener('click', () => menu.classList.remove('translate-x-full'));
+        if (closeBtn && menu) closeBtn.addEventListener('click', () => menu.classList.add('translate-x-full'));
+        mobileLinks.forEach(link => link.addEventListener('click', () => { if (menu) menu.classList.add('translate-x-full'); }));
+
+        // REVEAL ANIMATIONS
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // FAQ ACCORDION
+        document.querySelectorAll('.faq-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', (!isExpanded).toString());
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>
